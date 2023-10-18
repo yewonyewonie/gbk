@@ -4,8 +4,10 @@
         "es2021": true
     },
     "extends": [
+        "plugin:react/jsx-runtime",
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "prettier"
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
@@ -15,6 +17,7 @@
         "react"
     ],
     "rules": {
+        "react/react-in-jsx-scope": "off",
         "indent": [
             "error",
             "tab"
