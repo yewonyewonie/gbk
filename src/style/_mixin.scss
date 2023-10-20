@@ -1,34 +1,105 @@
-//c : color , b : black, w : white, g : gold, s : silver
 $colors: (
-    c-b : #0a0a0c,
-    c-w : #f5f4f3,
+    colorType1 : #1A124A colorType2 : #433577 colorType3 : #E34A73 whiteType1 : #FFFFFF witheType2 : rgba($color: #FFFFFF, $alpha: 0.6) gray : #EBEBEB black : #111111 blackType2 : rgba($color: #111111, $alpha: 0.4)
 );
 
+
+//fontType-colorLangugeSizeWeight
+
+@mixin fontType-wKR64B {
+    font-family: 'NotoSansKR';
+    font-size: 64px;
+    color: map-get($colors, whiteType1);
+    font-weight: 700; //bold
+    font-family: 'NotoSansKR';
+}
+
+@mixin fontType-wKR48B {
+    font-family: 'NotoSansKR';
+    font-size: 48px;
+    color: map-get($colors, whiteType1);
+    font-weight: 700; //bold
+}
+
+@mixin fontType-wKR24R {
+    font-family: 'NotoSansKR';
+    font-size: 24px;
+    color: map-get($colors, whiteType1);
+    font-weight: 400; //Regular
+}
+
+@mixin fontType-wKR18R {
+    font-family: 'NotoSansKR';
+    font-size: 18px;
+    color: map-get($colors, whiteType1);
+    font-weight: 400; //Regular
+}
+
+@mixin fontType-w2KR18B {
+    font-family: 'NotoSansKR';
+    font-size: 18px;
+    color: map-get($colors, whiteType2);
+    font-weight: 700; //Bold
+}
+
+@mixin fontType-w2KR18R {
+    font-family: 'NotoSansKR';
+    font-size: 18px;
+    color: map-get($colors, fontColorType2);
+    font-weight: 400; //Regular
+}
+
+@mixin fontType-wEN16B {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: map-get($colors, whiteType1);
+    font-weight: 700; //bold
+}
+
 //ST : ScreenType;
-@mixin ST01{
+@mixin screenProtector {
+    width: 100%;
+    height: 100vh;
+    background-color: map-get($map: colors, $key: blackType2);
+}
+
+@mixin ScreenType1 {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+}
+
+@mixin ScreenType2 {
+    width: 100%;
+    display: flex;
+}
+
+@mixin ST01 {
     width: 100%;
     height: 1080px;
-    background-color: map-get($colors, c-b);
+    background-color: map-get($colors, black);
 }
-@mixin ST02{
+
+@mixin ST02 {
     width: 100%;
     height: 1080px;
     background-color: map-get($colors, c-w);
 }
 
 //반응형
-@mixin mobile{
-    @media (max-width: 780px){
+@mixin mobile {
+    @media (max-width: 768px) {
         @content;
     }
 }
-@mixin tablet{
-    @media (min-width : 781px) and (max-width: 1080px){
+
+@mixin tablet {
+    @media (min-width : 769px) and (max-width: 1024px) {
         @content;
     }
 }
-@mixin desktop{
-    @media (min-width : 1081px) and (max-width: 1920px){
+
+@mixin desktop {
+    @media (min-width : 1025px) and (max-width: 1440px) {
         @content;
     }
 }
