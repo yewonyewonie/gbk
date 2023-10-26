@@ -1,0 +1,88 @@
+@import '../style/mixin';
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+.guideSection{
+    .moon{
+        width: 310px;
+        height: 270px;
+        background: url(../asset/img/moon.png);
+        background-size: cover;
+        position: absolute;
+        top: 110px;
+        left: 1450px;
+        z-index: 1000000000000000;
+        opacity: 0.8;
+    }
+    .yw{
+        width: 100%;
+        height: 90px;
+        position: absolute;
+        top: 0;
+        border-bottom: 1px solid white;
+    }
+    background: url(../asset/img/all_bg.png);
+    background-color: #1E154E;
+    .sectionScreen{
+        @include screenType1;
+        height: 100vh;
+        flex-direction: column;
+        .fontWrap{
+            display: flex;
+            justify-content: space-between;
+            .fontWrapR{
+            margin-top: 200px;
+            z-index: 100;
+            h2{
+                @include w120eb ;
+                margin-bottom : 40px;
+            }
+            h3{
+                @include w36eb;
+                margin-bottom : 20px;
+                z-index : 2;
+            }
+            p{
+                @include w18r;
+                z-index : 2;
+            }
+        }
+            .fontWrapL{
+                margin-top: 530px;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                p{  width: 500px;
+                    text-align: end;
+                    color: white;
+                    font-size: 32px;
+                    margin-bottom: 20px;
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
+}
+    .guideScreenWrap{
+        width: 68%;
+        height: 700px;
+        position: absolute;
+        left: 0; bottom: 0;
+    }
+    .k{
+        background: url(../asset/img/guide_k.png);
+        background-size: cover;
+        z-index: 10;
+    }
+    .d{
+        background: url(../asset/img/guide_c.png);
+        background-size: cover;
+        display: none;
+    }
+    .c{
+        background: url(../asset/img/guide_d.png);
+        background-size: cover;
+        display: none;
+    }
+}
