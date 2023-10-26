@@ -1,114 +1,119 @@
 @font-face {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     font-weight: 900;
     src: local('Roboto'),
-    url('./Roboto-Black.woff2') format("woff2"),
-    url('./Roboto-Black.woff') format("woff"),
-    url('./Roboto-Black.ttf') format("ttf");
-    unicode-range:U+0041-005A, U+0061-007A;
-}
-@font-face {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    src: local('Roboto'),
-    url('./Roboto-Bold.woff2') format("woff2"),
-    url('./Roboto-Bold.woff') format("woff"),
-    url('./Roboto-Bold.ttf') format("ttf");
-    unicode-range:U+0041-005A, U+0061-007A;
-}
-  
-@font-face {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    src: local('Roboto'),
-    url('./Roboto-Medium.woff2') format("woff2"),
-    url('./Roboto-Medium.woff') format("woff"),
-    url('./Roboto-Medium.ttf') format("ttf");
-    unicode-range:U+0041-005A, U+0061-007A;
+        url('./Roboto-Black.woff2') format("woff2"),
+        url('./Roboto-Black.woff') format("woff"),
+        url('./Roboto-Black.ttf') format("ttf");
+    unicode-range: U+0041-005A, U+0061-007A;
 }
 
 @font-face {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: local('Roboto'),
+        url('./Roboto-Bold.woff2') format("woff2"),
+        url('./Roboto-Bold.woff') format("woff"),
+        url('./Roboto-Bold.ttf') format("ttf");
+    unicode-range: U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 500;
+    src: local('Roboto'),
+        url('./Roboto-Medium.woff2') format("woff2"),
+        url('./Roboto-Medium.woff') format("woff"),
+        url('./Roboto-Medium.ttf') format("ttf");
+    unicode-range: U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: 'Roboto';
     font-weight: 400;
     src: local('Roboto'),
-    url('./Roboto-Regular.woff2') format("woff2"),
-    url('./Roboto-Regular.woff') format("woff"),
-    url('./Roboto-Regular.ttf') format("ttf");
-    unicode-range:U+0041-005A, U+0061-007A;
+        url('./Roboto-Regular.woff2') format("woff2"),
+        url('./Roboto-Regular.woff') format("woff"),
+        url('./Roboto-Regular.ttf') format("ttf");
+    unicode-range: U+0041-005A, U+0061-007A;
 }
-  
+
 @font-face {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     font-weight: 300;
     src: local('Roboto'),
-    url('./Roboto-Light.woff2') format("woff2"),
-    url('./Roboto-Light.woff') format("woff"),
-    url('./Roboto-Light.ttf') format("ttf");
-    unicode-range:U+0041-005A, U+0061-007A;
+        url('./Roboto-Light.woff2') format("woff2"),
+        url('./Roboto-Light.woff') format("woff"),
+        url('./Roboto-Light.ttf') format("ttf");
+    unicode-range: U+0041-005A, U+0061-007A;
 }
+
 @font-face {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     font-weight: 100;
     src: local('Roboto'),
-    url('./Roboto-Thin.woff2') format("woff2"),
-    url('./Roboto-Thin.woff2') format("woff"),
-    url('./Roboto-Thin.woff2') format("ttf");
-    unicode-range:U+0041-005A, U+0061-007A;
+        url('./Roboto-Thin.woff2') format("woff2"),
+        url('./Roboto-Thin.woff2') format("woff"),
+        url('./Roboto-Thin.woff2') format("ttf");
+    unicode-range: U+0041-005A, U+0061-007A;
 }
+
 @font-face {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR';
     font-weight: 900;
     src: local('Noto Sans KR'),
-    url('./NotoSansKR-Black.woff2') format("woff2"),
-    url('./NotoSansKR-Black.woff') format("woff"),
-    url('./NotoSansKR-Black.ttf') format("ttf");
-    unicode-range:U+AC00-D7A3;
-}
-@font-face {
-    font-family: 'NotoSansKR', sans-serif;
-    font-weight: 700;
-    src: local('NotoSansKR'),
-    url('./NotoSansKR-Bold.woff2') format("woff2"),
-    url('./NotoSansKR-Bold.woff') format("woff"),
-    url('./NotoSansKR-Bold.ttf') format("ttf");
-    unicode-range:U+AC00-D7A3;
-}
-  
-@font-face {
-    font-family: 'NotoSansKR', sans-serif;
-    font-weight: 500;
-    src: local('NotoSansKR'),
-    url('./NotoSansKR-Medium.woff2') format("woff2"),
-    url('./NotoSansKR-Medium.woff') format("woff"),
-    url('./NotoSansKR-Medium.ttf') format("ttf");
-    unicode-range:U+AC00-D7A3;
+        url('./NotoSansKR-Black.woff2') format("woff2"),
+        url('./NotoSansKR-Black.woff') format("woff"),
+        url('./NotoSansKR-Black.ttf') format("ttf");
+    unicode-range: U+AC00-D7A3;
 }
 
 @font-face {
-    font-family: 'NotoSansKR', sans-serif;
+    font-family: 'NotoSansKR';
+    font-weight: 700;
+    src: local('NotoSansKR'),
+        url('./NotoSansKR-Bold.woff2') format("woff2"),
+        url('./NotoSansKR-Bold.woff') format("woff"),
+        url('./NotoSansKR-Bold.ttf') format("ttf");
+    unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-weight: 500;
+    src: local('NotoSansKR'),
+        url('./NotoSansKR-Medium.woff2') format("woff2"),
+        url('./NotoSansKR-Medium.woff') format("woff"),
+        url('./NotoSansKR-Medium.ttf') format("ttf");
+    unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
     font-weight: 400;
     src: local('Roboto'),
-    url('./NotoSansKR-Regular.woff2') format("woff2"),
-    url('./NotoSansKR-Regular.woff') format("woff"),
-    url('./NotoSansKR-Regular.ttf') format("ttf");
-    unicode-range:U+AC00-D7A3;
+        url('./NotoSansKR-Regular.woff2') format("woff2"),
+        url('./NotoSansKR-Regular.woff') format("woff"),
+        url('./NotoSansKR-Regular.ttf') format("ttf");
+    unicode-range: U+AC00-D7A3;
 }
-  
+
 @font-face {
-    font-family: 'NotoSansKR', sans-serif;
+    font-family: 'NotoSansKR';
     font-weight: 300;
     src: local('Roboto'),
-    url('./NotoSansKR-Light.woff2') format("woff2"),
-    url('./NotoSansKR-Light.woff') format("woff"),
-    url('./NotoSansKR-Light.ttf') format("ttf");
-    unicode-range:U+AC00-D7A3;
+        url('./NotoSansKR-Light.woff2') format("woff2"),
+        url('./NotoSansKR-Light.woff') format("woff"),
+        url('./NotoSansKR-Light.ttf') format("ttf");
+    unicode-range: U+AC00-D7A3;
 }
+
 @font-face {
-    font-family: 'NotoSansKR', sans-serif;
+    font-family: 'NotoSansKR';
     font-weight: 100;
     src: local('NotoSansKR'),
-    url('./NotoSansKR-Thin.woff2') format("woff2"),
-    url('./NotoSansKR-Thin.woff2') format("woff"),
-    url('./NotoSansKR-Thin.woff2') format("ttf");
-    unicode-range:U+AC00-D7A3;
+        url('./NotoSansKR-Thin.woff2') format("woff2"),
+        url('./NotoSansKR-Thin.woff2') format("woff"),
+        url('./NotoSansKR-Thin.woff2') format("ttf");
+    unicode-range: U+AC00-D7A3;
 }
