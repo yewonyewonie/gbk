@@ -1,200 +1,222 @@
 $colors: (
-    bgc01 : #1A124A,
-    bgc02 : #433577,
-    bgc03 : #FFFFFF,
-    bgc04 : #D9D9D9,
-    font01 : #33BBC5,
-    wFont01 : #FFFFFF,
-    wFont02 : rgba($color: #FFFFFF, $alpha: 0.6),
-    wFont03 : rgba($color: #FFFFFF, $alpha: 0.8),
-    bFont01 : #111111,
-    bFont02 : rgba($color: #111111, $alpha: 0.6),
-    bFont03 : rgba($color: #111111, $alpha: 0.7),
-    bFont04 : rgba($color: #111111, $alpha: 0.4)
+  bgc01: #1a124a,
+  bgc02: #433577,
+  bgc03: #ffffff,
+  bgc04: #d9d9d9,
+  font01: #33bbc5,
+  wFont01: #ffffff,
+  wFont02:
+    rgba(
+      $color: #ffffff,
+      $alpha: 0.6,
+    ),
+  wFont03:
+    rgba(
+      $color: #ffffff,
+      $alpha: 0.8,
+    ),
+  bFont01: #111111,
+  bFont02:
+    rgba(
+      $color: #111111,
+      $alpha: 0.6,
+    ),
+  bFont03:
+    rgba(
+      $color: #111111,
+      $alpha: 0.7,
+    ),
+  bFont04:
+    rgba(
+      $color: #111111,
+      $alpha: 0.4,
+    ),
 );
-
 
 //colorSizeWeight;
 
 @mixin w120eb {
-    font-size: 120px;
-    color: map-get($map: $colors, $key : wFont01);
-    font-weight: 800;
+  font-size: 120px;
+  color: map-get($map: $colors, $key: wFont01);
+  font-weight: 800;
 }
 
 @mixin w48eb {
-    font-size: 48px;
-    color: map-get($map: $colors, $key : wFont01);
-    font-weight: 800;
+  font-size: 48px;
+  color: map-get($map: $colors, $key: wFont01);
+  font-weight: 800;
 }
 
 @mixin w48b {
-    font-size: 48px;
-    color: map-get($map: $colors, $key : wFont01);
-    font-weight: 700;
+  font-size: 48px;
+  color: map-get($map: $colors, $key: wFont01);
+  font-weight: 700;
 }
 
 @mixin b48b {
-    font-size: 48px;
-    color: map-get($map: $colors, $key : bFont01);
-    font-weight: 700;
+  font-size: 48px;
+  color: map-get($map: $colors, $key: bFont01);
+  font-weight: 700;
 }
 
 @mixin w36eb {
-    font-size: 36px;
-    color: map-get($map: $colors, $key: wFont01);
-    font-weight: 800;
+  font-size: 36px;
+  color: map-get($map: $colors, $key: wFont01);
+  font-weight: 800;
 }
 
 @mixin font32b {
-    font-size: 32px;
-    font-weight: 700;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 @mixin font32r {
-    font-size: 32px;
-    font-weight: 400;
+  font-size: 32px;
+  font-weight: 400;
 }
 
 @mixin w24eb {
-    font-size: 24px;
-    color: map-get($map: $colors, $key : wFont01);
-    font-weight: 800;
+  font-size: 24px;
+  color: map-get($map: $colors, $key: wFont01);
+  font-weight: 800;
 }
 
 @mixin b24b {
-    font-size: 24px;
-    color: map-get($map: $colors, $key : bFont01);
-    font-weight: 700;
+  font-size: 24px;
+  color: map-get($map: $colors, $key: bFont01);
+  font-weight: 700;
 }
 
 @mixin w24r {
-    font-size: 24px;
-    color: map-get($map: $colors, $key : wFont01);
-    font-weight: 400;
+  font-size: 24px;
+  color: map-get($map: $colors, $key: wFont01);
+  font-weight: 400;
 }
 
 @mixin b24l {
-    font-size: 24px;
-    color: map-get($map: $colors, $key : bFont01);
-    font-weight: 300;
+  font-size: 24px;
+  color: map-get($map: $colors, $key: bFont01);
+  font-weight: 300;
 }
 
 @mixin w18b {
-    font-size: 18px;
-    color: map-get($map: $colors, $key : wFont01);
-    font-weight: 700;
+  font-size: 18px;
+  color: map-get($map: $colors, $key: wFont01);
+  font-weight: 700;
 }
 
 @mixin w18r {
-    font-size: 18px;
-    color: map-get($map: $colors, $key : wFont01);
-    font-weight: 400;
+  font-size: 18px;
+  color: map-get($map: $colors, $key: wFont01);
+  font-weight: 400;
 }
 
 @mixin b18r {
-    font-size: 18px;
-    color: map-get($map: $colors, $key : bfont01);
-    font-weight: 400;
+  font-size: 18px;
+  color: map-get($map: $colors, $key: bfont01);
+  font-weight: 400;
 }
 
 @mixin w18l {
-    font-size: 18px;
-    color: map-get($map: $colors, $key : wFont01);
-    font-weight: 300;
+  font-size: 18px;
+  color: map-get($map: $colors, $key: wFont01);
+  font-weight: 300;
 }
 
 @mixin b18l {
-    font-size: 18px;
-    color: map-get($map: $colors, $key : bfont01);
-    font-weight: 300;
+  font-size: 18px;
+  color: map-get($map: $colors, $key: bfont01);
+  font-weight: 300;
 }
 
 @mixin w16b {
-    font-size: 16px;
-    color: map-get($map: $colors, $key : bfont01);
-    font-weight: 300;
+  font-size: 16px;
+  color: map-get($map: $colors, $key: bfont01);
+  font-weight: 300;
 }
 
 @mixin m16b {
-    font-size: 16px;
-    color: map-get($map: $colors, $key : mfont01);
-    font-weight: 300;
+  font-size: 16px;
+  color: map-get($map: $colors, $key: mfont01);
+  font-weight: 300;
 }
 
 //ST : ScreenType;
 @mixin screenProtector {
-    width: 100%;
-    height: 100%;
-    background-color: map-get($map: colors, $key: blackType2);
+  width: 100%;
+  height: 100%;
+  background-color: map-get($map: colors, $key: blackType2);
 }
 
 @mixin screenType1 {
-    width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 @mixin screenType2 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 //반응형
 @mixin mobile {
-    @media (max-width: 768px) {
-        @content;
-    }
+  @media (max-width: 768px) {
+    @content;
+  }
 }
 
 @mixin tablet {
-    @media (min-width : 769px) and (max-width: 1024px) {
-        @content;
-    }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    @content;
+  }
 }
 
 @mixin desktop {
-    @media (min-width : 1025px) and (max-width: 1440px) {
-        @content;
-    }
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    @content;
+  }
 }
 
 //ST : ScreenType;
 @mixin screenProtector {
-    width: 100%;
-    height: 100%;
-    background-color: map-get($map: colors, $key: blackType2);
+  width: 100%;
+  height: 100%;
+  background-color: map-get($map: colors, $key: blackType2);
 }
 
 @mixin ScreenType1 {
-    width: 1440px;
-    margin: 0 auto;
-    display: flex;
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
 }
 
 @mixin ScreenType2 {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 }
 
 //반응형
+@mixin mobile2 {
+  @media (max-width: 460px) {
+  }
+}
 @mixin mobile {
-    @media (max-width: 768px) {
-        @content;
-    }
+  @media (min-width: 461px) and (max-width: 768px) {
+    @content;
+  }
 }
 
 @mixin tablet {
-    @media (min-width : 769px) and (max-width: 1024px) {
-        @content;
-    }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    @content;
+  }
 }
 
 @mixin desktop {
-    @media (min-width : 1025px) and (max-width: 1440px) {
-        @content;
-    }
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    @content;
+  }
 }
