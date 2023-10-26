@@ -33,8 +33,8 @@ section{
             width: 100%;
             display: flex;
             justify-content: space-between;
-            .fontWrapR{
-            margin-top: 210px;
+            .fontWrapL{
+            margin-top: 195px;
             z-index: 100;
             h2{
                 @include w120eb ;
@@ -50,7 +50,7 @@ section{
                 z-index : 2;
             }
         }
-            .fontWrapL{
+            .fontWrapR{
                 margin-top: 650px;
                 display: flex;
                 flex-direction: column;
@@ -86,4 +86,56 @@ section{
         background-size: cover;
         display: none;
     }
+
+    @include desktop{
+        width: 100%;
+        padding: 0px 50px;
+        .sectionScreen{
+            width: 100%;
+            .fontWrap{
+                .fontWrapL{
+                    p{
+                     width: 450px;
+                    }
+                }
+            }
+        }
+        .guideScreenWrap{
+            width: 68%;
+        }
+    }
+
+    @include tablet{
+        .sectionScreen{
+            width: 100%;
+            .fontWrap{
+                margin-top: 85px;
+                flex-direction: column;
+                text-align: center;
+                width: min-content;
+                .fontWrapL{
+                    margin-top: 90px;
+                    h2{
+                        @include w48b;
+                        margin-bottom:20px;
+                    }
+                    h3{
+                        @include w24eb
+                    }
+                }
+                .fontWrapR{
+                    margin: 50px 0;
+                    p{
+                        @include w18r;
+                    }
+                }
+            
+            }
+        }
+        .guideScreenWrap{
+            max-width: 1024px;
+            height: 668px;;
+        }
+    }
 }
+

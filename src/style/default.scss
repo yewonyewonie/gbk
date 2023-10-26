@@ -2,6 +2,10 @@
 html{
     font-family: 'NotoSansKR';
 }
+
+*{
+    box-sizing: border-box;
+}
 h1, h2, h3, h4, p, body, main, section{
     margin: 0;
     padding: 0;
@@ -15,7 +19,4 @@ a{
 p{
     line-height: 1.7;
     letter-spacing: -1px;
-}
-div{
-    box-sizing: border-box;
 }
