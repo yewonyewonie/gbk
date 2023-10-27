@@ -7,8 +7,10 @@ import GalleryPage from './pages/GalleryPage';
 import NoticePage from './pages/NoticePage';
 import UsersPage from './pages/UsersPage';
 
+
 function App() {
 	return <div className="App">
+
 	<Routes>
 		<Route path='/' element={<HomePage/>}></Route>
 		<Route path='/guide' element={<GuidePage></GuidePage>}></Route>
