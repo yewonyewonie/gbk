@@ -1,0 +1,81 @@
+@import '../../../style/mixin';
+
+.onlineEvent {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #1a124a 50%, #423476);
+
+  .onlineEventMain {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 195px;
+    text-align: center;
+    .onlineEventMainTitle {
+      @include w48b;
+      padding-bottom: 50px;
+    }
+    .onlineWrap {
+      display: flex;
+      justify-content: space-between;
+      .onlineBox {
+        width: calc((100% - 40px) / 3);
+        height: 100%;
+        background-color: white;
+        .onlineBoxPic {
+          width: 100%;
+          height: 360px;
+        }
+        .onlinePic1 {
+          background: url(../../../asset/img/img/밤의석조전/seokjojeon-41.png)
+            center;
+          background-size: cover;
+        }
+        .onlinePic2 {
+          background: url(../../../asset/img/img/밤의석조전/seokjojeon-37.png)
+            center;
+          background-size: cover;
+        }
+        .onlinePic3 {
+          background: url(../../../asset/img/img/밤의석조전/seokjojeon-58.png)
+            center;
+          background-size: cover;
+        }
+        .onlineBoxTxt {
+          padding-top: 20px;
+          h1 {
+            @include b24b;
+          }
+          div {
+            @include b18r;
+            padding: 20px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .onlineEvent {
+    padding: 0 50px;
+    .onlineEventMain {
+      .onlineWrap {
+        .onlineBox {
+          .onlineBoxPic {
+            height: 242px;
+            }
+        .onlineBoxTxt{
+            height:166px;
+            h1{
+                @include b18r;
+                font-weight: bold;
+            }
+            div{
+                padding:10px 0;
+            }
+        }
+          }
+        }
+      }
+    }
+  }

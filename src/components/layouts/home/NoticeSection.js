@@ -12,32 +12,35 @@ const NoticeSection = () => {
         </div>
         <div className="noticeRight">
           <div className="noticeBoxWrap">
+
             <div className="noticeBox">
               <div className="noticeBoxDate">2023-10-27</div>
               <h1>공지사항 제목</h1>
               <p>공지사항입니다!<br />공지사항입니다!<br />공지사항입니다!<br />공지사항입니다!</p>
               <div className="noticeBoxLogo"></div>
             </div>
+
             <div className="noticeBox">
               <div className="noticeBoxDate">2023-10-27</div>
               <h1>공지사항 제목</h1>
               <p>공지사항입니다!<br />공지사항입니다!<br />공지사항입니다!<br />공지사항입니다!</p>
               <div className="noticeBoxLogo"></div>
             </div>
-          </div>
-          <div className="noticeBoxWrap">
-          <div className="noticeBox">
-              <div className="noticeBoxDate">2023-10-27</div>
-              <h1>공지사항 제목</h1>
-              <p>공지사항입니다!<br />공지사항입니다!<br />공지사항입니다!<br />공지사항입니다!</p>
-              <div className="noticeBoxLogo"></div>
-            </div>
+            
             <div className="noticeBox">
               <div className="noticeBoxDate">2023-10-27</div>
               <h1>공지사항 제목</h1>
               <p>공지사항입니다!<br />공지사항입니다!<br />공지사항입니다!<br />공지사항입니다!</p>
               <div className="noticeBoxLogo"></div>
             </div>
+
+            <div className="noticeBox">
+              <div className="noticeBoxDate">2023-10-27</div>
+              <h1>공지사항 제목</h1>
+              <p>공지사항입니다!<br />공지사항입니다!<br />공지사항입니다!<br />공지사항입니다!</p>
+              <div className="noticeBoxLogo"></div>
+            </div>
+
           </div>
         </div>
       </div>

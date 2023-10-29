@@ -149,43 +149,26 @@ $colors: (
   font-weight: 400;
 }
 
-//ST : ScreenType;
-@mixin screenProtector {
-  width: 100%;
-  height: 100%;
-}
+// //ST : ScreenType;
+// @mixin screenProtector {
+//   width: 100%;
+//   height: 100%;
+// }
 
-@mixin screenType1 {
-  width: 1440px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-}
+// @mixin screenType1 {
+//   width: 1440px;
+//   margin: 0 auto;
+//   display: flex;
+//   align-items: center;
+// }
 
-@mixin screenType2 {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
+// @mixin screenType2 {
+//   width: 100%;
+//   display: flex;
+//   align-items: center;
+// }
 
-//반응형
-@mixin mobile {
-  @media (max-width: 768px) {
-    @content;
-  }
-}
 
-@mixin tablet {
-  @media (min-width: 769px) and (max-width: 1024px) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: 1025px) and (max-width: 1440px) {
-    @content;
-  }
-}
 
 //ST : ScreenType;
 @mixin screenProtector {
@@ -207,7 +190,9 @@ $colors: (
 
 //반응형
 @mixin mobile2 {
-  @media (max-width: 460px) {}
+  @media (max-width: 460px) {
+    @content;
+  }
 }
 
 @mixin mobile {

@@ -4,7 +4,7 @@
     width:100%;
     height:100vh;
     .noticeSectionMain{
-        width:1440px;
+        max-width:1440px;
         height:100%;
         margin:0 auto;
         display: flex;
@@ -22,18 +22,19 @@
         }
         .noticeRight{
             padding-top: 190px;
-          width:940px;
+          max-width:940px;
           height:760px;
         //   display: flex;
         //   justify-content: space-between;
           .noticeBoxWrap{
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             margin-top: 20px;
           }
           .noticeBox{
+            margin-bottom: 20px;
             width:calc((100% - 20px) / 2);
-            height:340px;
             border:1px solid black;
             padding:30px 60px;
             .noticeBoxDate{
@@ -60,7 +61,28 @@
 }
 
 @include tablet{
-    main{
-        background-color: red
+    .NoticeSection{
+        max-width:1024px;
+        height:100%;
+        padding:0 50px;
+        .noticeSectionMain{
+            flex-direction: column;
+            .noticeLeft{
+                padding-top: 271px;
+                margin:0 auto;
+                text-align: center;
+                p{
+                    margin-bottom: 70px;
+                }
+            }
+            .noticeRight{
+                margin: 0 auto;
+                padding-top: 50px;
+                .noticeBox{
+                    padding:20px;
+                }
+            }
+        }
     }
-};
+
+}
