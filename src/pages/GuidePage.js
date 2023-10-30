@@ -1,6 +1,10 @@
+import SubGuide from '../components/layouts/guide/SubGuide';
+
 const GuidePage = () => {
     return ( 
-        <main className="GuidePage"></main>
+        <main className="guidePage">
+            <SubGuide />
+        </main>
      );
 };
  

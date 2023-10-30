@@ -8,6 +8,9 @@
     max-width: 1440px;
     height: 100%;
     margin: 0 auto;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
     h1 {
       @include w48b;
       padding: 0 0 50px 0;
