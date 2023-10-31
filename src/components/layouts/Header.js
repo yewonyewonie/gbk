@@ -61,7 +61,7 @@ const Header = () => {
     >
       <div className="headerScreen">
         <h1 className="logoWrap">
-          <i></i>
+          <Link to="/"><i></i></Link>
         </h1>
         <nav className={isNavToggle ? 'gnb' : 'gnb Off'}>
           <ul>

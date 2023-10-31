@@ -1,12 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import './SubProgram.scss';
 import BasicButton from '../../btn/BasicButton';
 
 const SubProgram = () => {
-  const [activeTab, setActiveTab] = useState('tab1');
+  const { tab } = useParams();
+  const [activeTab, setActiveTab] = useState(1);
+
+  useEffect(() => {
+    console.log('Tab from URL:', tab);
+    if (!tab) {
+      console.log('Setting default tab: 1');
+      setActiveTab(1);
+    } else if (tab === 'star') {
+      console.log('Setting active tab: 1');
+      setActiveTab(1);
+    } else if (tab === 'moon') {
+      console.log('Setting active tab: 2');
+      setActiveTab(2);
+    } else if (tab === 'night') {
+      console.log('Setting active tab: 3');
+      setActiveTab(3);
+    }
+  }, [tab]);
+  
+  const changeTab = (tab) => {
+    setActiveTab(tab);
+};
 
   const TabContent = () => {
-    if (activeTab === 'tab1') {
+    if (activeTab === 1) {
       return (
         <div className="programContent">
           <h1 className="programContentTitle">별빛야행</h1>
@@ -48,7 +71,7 @@ const SubProgram = () => {
       );
 
 
-    } else if (activeTab === 'tab2') {
+    } else if (activeTab === 2) {
       return (
         <div className="programContent">
           <h1 className="programContentTitle">달빛기행</h1>
@@ -85,7 +108,7 @@ const SubProgram = () => {
 
 
       
-    } else if (activeTab === 'tab3') {
+    } else if (activeTab === 3) {
       return (
         <div className="programContent">
           <h1 className="programContentTitle">밤의 석조전</h1>
@@ -123,37 +146,32 @@ const SubProgram = () => {
     }
   };
 
-  const changeTab = (tab) => {
-    setActiveTab(tab);
-  };
+
 
   return (
     <section className="subProgram">
+      <div className="subProgramHeader">
+        <div className="subProgramHeaderPic"></div>
+        <h1>프로그램</h1>
+        <p>문구를 입력해주세요</p>
+      </div>
       <div className="subProgramScreen">
         <div className="tabWrap">
-          {/* <div className="tabMenu" onClick={() => changeTab('tab1')}>
-            별빛야행
-          </div> */}
-          <div className={`tabMenu ${activeTab === 'tab1' ? 'tabAcitve' : ''}`} onClick={() => changeTab('tab1')}>
+          <div className={`tabMenu ${activeTab === 1 ? 'tabAcitve' : ''}`} onClick={() => changeTab(1)}>
             별빛야행
           </div>
           <div className="tabDivide"> | </div>
-          {/* <div className="tabMenu" onClick={() => changeTab('tab2')}>
-            달빛기행
-          </div> */}
-          <div className={`tabMenu ${activeTab === 'tab2' ? 'tabAcitve' : ''}`} onClick={() => changeTab('tab2')}>
+          <div className={`tabMenu ${activeTab === 2 ? 'tabAcitve' : ''} `} onClick={() => changeTab(2)}>
             달빛기행
           </div>
           <div className="tabDivide"> | </div>
-          {/* <div className="tabMenu" onClick={() => changeTab('tab3')}>
-            밤의 석조전
-          </div> */}
-          <div className={`tabMenu ${activeTab === 'tab3' ? 'tabAcitve' : ''}`} onClick={() => changeTab('tab3')}>
+          <div className={`tabMenu ${activeTab === 3 ? 'tabAcitve' : ''}`} onClick={() => changeTab(3)}>
             밤의 석조전
           </div>
         </div>
         <TabContent />
       </div>
+      <div className="subProgramFooter"></div>
     </section>
   );
 };

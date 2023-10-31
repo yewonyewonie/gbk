@@ -38,7 +38,9 @@ const EventSection = () => {
                         </div>
                     </div>
                 </div>
+              
             </div>
+            <div className="eventSectionFooter"></div>
         </section>
      );
 };
