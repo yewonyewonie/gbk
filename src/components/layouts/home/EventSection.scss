@@ -33,7 +33,7 @@
       justify-content: space-between;
 
       .onlineBox {
-        width: calc((100% - 40px) / 3);
+        width: calc((100% - 60px) / 3);
         height: 100%;
         background-color: white;
 
@@ -58,15 +58,19 @@
         }
 
         .onlineBoxTxt {
-          padding-top: 20px;
-
+          height:180px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
           h1 {
             @include b24b;
           }
-
           div {
             @include b18r;
             padding: 20px 0;
+          }
+          .BasicButton{
+            padding:0;
           }
         }
       }

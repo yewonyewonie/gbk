@@ -1,17 +1,19 @@
 @import '../../../style/mixin';
 .subGuide {
   width: 100%;
-//   background-color: red;
+  //   background-color: red;
   .subGuideHeader {
     height: 400px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:end;
     background: url(../../../asset/img/img/달빛기행/dal-22.png) center;
     background-size: cover;
+    padding-bottom: 100px;
     h1 {
       @include w48b;
+      padding-bottom: 20px;
     }
     p {
       @include w18b;
@@ -43,78 +45,265 @@
       }
     }
     .subGuideContent {
-        .subGuideTitle {
+      .iconBg {
+        width: 70px;
+        height: 70px;
+        background-color: #ebebeb;
+        border-radius: 50%;
+        line-height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .subGuideTitle {
+        @include b48b;
+        padding: 58px 0 50px 0;
+        text-align: center;
+      }
+      .subGuideBoxWrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        .subGuideBox {
+          width: calc((100% - 60px) / 4);
+          height: 243px;
+          border: 1px solid #acacac;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          padding-top: 50px;
+          h2 {
+            @include b24b;
+            padding-bottom: 20px;
+          }
+          p {
+            @include b18r;
+          }
+          div {
+            width: 110px;
+            height: 30px;
+            border: 1px solid #33bbc5;
+            color: #33bbc5;
+            @include m14b;
+            text-align: center;
+            margin: 20px auto 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+        }
+      }
+      .subGuideNotification {
+        padding: 50px 0;
+        border-top: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+        .subGuideTableTitle{
+          @include b18b;
+          // letter-spacing: 3px;
+        }
+        .subGuideTableText{
+          @include b18r;
+          padding-left: 20px;
+        }
+        h2 {
+          padding-bottom: 20px;
+        }
+        p {
+          @include b18r;
+        }
+        .subGuideCaution {
+          @include b16r;
+          color: #535353;
+        }
+      }
+      .guideMap {
+        h1 {
           @include b48b;
-          padding:100px 0 50px 0;
           text-align: center;
         }
-        .subGuideBoxWrap{
+        .map {
+          width: 100%;
+          height: 600px;
+          background-color: red;
+          margin: 50px 0 40px 0;
+        }
+        .addressTel {
+          display: flex;
+          justify-content: space-between;
+          .mapAddress {
+            p {
+              @include b24r;
+            }
             display: flex;
-            justify-content: space-between;
-            margin-bottom: 50px;
-            .subguideBox{
-                width:calc((100% - 60px) / 4);
-                height:243px;
-                border:1px solid #ACACAC;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                h2{
-                    @include b24b;
-                    padding-bottom: 20px;
-                }
-                p{
-                    @include b18r
-                }
-                div{
-                    width:110px; height:30px;
-                    border:1px solid #33BBC5;
-                    color:#33BBC5;
-                    @include m14b;
-                    text-align: center;
-                    margin: 20px auto 0 auto;
-                   
-                }
+            .mapIcon {
+              width: 40px;
+              height: 40px;
+              background: url(../../../asset/img/icon.png);
+              background-position: -79px -273px;
+              margin-right: 20px; 
             }
+          }
+          .telFax {
+            p {
+              @include b18b;
+              margin-left: 20px;
+            }
+            span {
+              @include b18r;
+            }
+            display: flex;
+            .iconBg {
+              width: 70px;
+              height: 70px;
+              background-color: #ebebeb;
+              border-radius: 50%;
+              line-height: 40px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              margin-left: 30px;
+              .telIcon {
+                width: 33px;
+                height: 31px;
+                background: url(../../../asset/img/phone-call.png) center;
+                background-size: cover;
+                // background: url(../../../asset/img/icon.png);
+                // background-position: -121px -274px;
+                margin: 0 auto;
+              }
+              .faxIcon {
+                width: 33px;
+                height: 31px;
+                background: url(../../../asset/img/icon.png);
+                background-position: -36px -274px; 
+                margin:0 auto;
+            }
+            }
+          }
         }
-        .subGuideNotification{
-            padding:50px 0;
-            border-top:1px solid #d9d9d9;
-            border-bottom : 1px solid #d0d0d0;
-            h2{
-                padding-bottom: 20px;
-            }
-            p{
-                @include b18r;
-            }
-            .subGuideCaution{
-                @include b16r;
-                color:#535353;
-            }
+      }
+      .transport{
+        padding:50px 0 200px 0;
+        h1{
+          @include b24b;
+          padding-bottom: 30px;
         }
-        .guideMap{
-            h1{
-                @include b48b;
-                text-align: center;
-
-            }
-            .map{
-                width:100%;
-                height:600px;
-                background-color: red;
-                margin:50px 0 40px 0;
-            }
+        p{
+          @include b16r;
+          color:#494949;
         }
-
-
-
-
-
-
-
-
+        .transportWrap{
+          display: flex;
+        .iconBg{
+          width:90px;
+          height:90px;
+          margin-bottom: 20px;
+          .subwayIcon{
+            width:50px; height:50px;
+            background: url(../../../asset/img/subway.png) center;
+            background-size: cover;
+            // background: url(../../../asset/img/icon.png) ;
+            // background-position: 0px -274px; 
+            margin:0 auto;
+          }
+          .busIcon{
+            width:50px; height:50px;
+            background: url(../../../asset/img/bus.png) center;
+            background-size: cover;
+            // background: url(../../../asset/img/icon.png) ;
+            // background-position: -162px -274px; 
+            margin:0 auto;
+          }
+        }
+        p{
+          @include b18b;
+          margin-left: 20px;
+          color:#111111;
+          span{
+            @include b18r;
+          }
+        }
+      }
+    
 
       }
+    }
+  }
+  @include tablet{
+    .subGuideScreen{
+      .tabWrap{
+        margin-top: 100px;
+      }
+      padding:0 50px;
+      .subGuideContent{
+        .subGuideBoxWrap{
+          .subGuideBox{
+            width:calc((100% - 20px) / 2);
+            height:250px;
+            margin-top: 20px;
+          }
+        }
+        .transport{
+          .transportWrap{
+            .tabletFlex{
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include mobileF{
+    .subGuideScreen{
+      .tabWrap{
+      }
+      .subGuideContent{
+        .subGuideBoxWrap{
+          .subGuideBox{
+          }
+        }
+        .transport{
+          .transportWrap{
+            .tabletFlex{
+            }
+          }
+        }
+      }
+    }
+  }
+  @include mobileS{
+    .subGuideScreen{
+      .tabWrap{
+        margin-top: 100px;
+      }
+      padding:0 50px;
+      .subGuideContent{
+        .subGuideBoxWrap{
+          .subGuideBox{
+            width:calc((100% - 20px) / 2);
+            height:250px;
+            margin-top: 20px;
+          }
+        }
+        .transport{
+          .transportWrap{
+            .mobileFlex{
+              display: flex;
+            }
+          }
+          .transportWrap{
+            p{
+              @include b14b;
+              span{
+                @include b14r;
+              }
+            }
+          }
+        }
+
+      }
+    }
   }
 }

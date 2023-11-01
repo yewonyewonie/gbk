@@ -113,6 +113,12 @@ $colors: (
   font-weight: 700;
 }
 
+@mixin b18b {
+  font-size: 18px;
+  color: map-get($map: $colors, $key: bont01);
+  font-weight: 700;
+}
+
 @mixin w18r {
   font-size: 18px;
   color: map-get($map: $colors, $key: wFont01);

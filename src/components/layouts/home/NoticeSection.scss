@@ -9,11 +9,11 @@
         margin:0 auto;
         display: flex;
         justify-content: space-between;
-    //      display: flex;
-    // flex-direction: column;
-    // justify-content: center;
         .noticeLeft{
-            padding-top: 384px;
+            display: flex;
+    flex-direction: column;
+    justify-content: center;
+            // padding-top: 384px;
             h1{
                 @include b48b;
             }
@@ -24,11 +24,12 @@
             
         }
         .noticeRight{
-            padding-top: 190px;
+            display: flex;
+    flex-direction: column;
+    justify-content: center;
+            // padding-top: 190px;
           max-width:940px;
-          height:760px;
-        //   display: flex;
-        //   justify-content: space-between;
+        //   height:760px;
           .noticeBoxWrap{
             display: flex;
             justify-content: space-between;
