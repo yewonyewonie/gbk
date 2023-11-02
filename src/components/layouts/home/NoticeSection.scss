@@ -1,92 +1,169 @@
 @import '../../../style/mixin';
 
-.NoticeSection{
-    width:100%;
-    height:100vh;
-    .noticeSectionMain{
-        max-width:1440px;
-        height:100%;
-        margin:0 auto;
+.NoticeSection {
+  width: 100%;
+  height: 100vh;
+  .noticeSectionMain {
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .noticeLeft {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // padding-top: 384px;
+      h1 {
+        @include b48b;
+      }
+      p {
+        @include b24l;
+        margin: 20px 0 100px 0;
+      }
+    }
+    .noticeRight {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // padding-top: 190px;
+      max-width: 940px;
+      //   height:760px;
+      .noticeBoxWrap {
         display: flex;
         justify-content: space-between;
-        .noticeLeft{
-            display: flex;
-    flex-direction: column;
-    justify-content: center;
-            // padding-top: 384px;
-            h1{
-                @include b48b;
-            }
-            p{
-                @include b24l;
-                margin:20px 0 100px 0;
-            }
-            
-        }
-        .noticeRight{
-            display: flex;
-    flex-direction: column;
-    justify-content: center;
-            // padding-top: 190px;
-          max-width:940px;
-        //   height:760px;
-          .noticeBoxWrap{
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
+   
+
+        .noticeBox {
+          margin-bottom: 20px;
+          width: calc((100% - 20px) / 2);
+          border: 1px solid black;
+          padding: 30px 60px;
+          height: 343px;
+          .noticeBoxDate {
+            @include m16b;
+          }
+          h1 {
+            @include b24b;
+            padding: 20px 0;
+          }
+          p {
+            @include b18l;
+          }
+          .noticeBoxLogo {
+            width: 88px;
+            height: 34px;
+            background-color: red;
+            background: url(../../../asset/img/icon.png);
+            background-position: -96px -190px;
             margin-top: 20px;
           }
-          .noticeBox{
-            margin-bottom: 20px;
-            width:calc((100% - 20px) / 2);
-            border:1px solid black;
-            padding:30px 60px;
-            .noticeBoxDate{
-                @include m16b;
-            }
-            h1{
-                @include b24b;
-                padding:20px 0;
-            }
-            p{
-                @include b18l;
-            }
-            .noticeBoxLogo{
-                width:88px;
-                height:34px;
-                background-color: red;
-                background: url(../../../asset/img/icon.png);
-                background-position: -96px -190px;
-                margin-top: 20px;
-            }
+        }
+      }
+    }
+  }
+
+  @include tablet {
+    max-width: 1024px;
+    height: 1120px;
+    padding: 0 50px;
+    .noticeSectionMain {
+        margin: 200px 0 0 0;
+      flex-direction: column;
+      justify-content: start;
+      .noticeLeft {
+        margin: 0 auto;
+        text-align: center;
+        p {
+          margin-bottom: 70px;
+        }
+      }
+      .noticeRight {
+        .noticeBoxWrap{
+            margin-top: 50px;
+        .noticeBox {
+          padding: 20px;
+          height: 302px;
+        }
+    }
+      }
+    }
+  }
+
+  @include mobileF {
+    height:1070px;
+    padding:0 30px;
+    .noticeSectionMain {
+        margin-top: 150px;
+      .noticeLeft {
+
+        h1 {
+          @include b40b;
+        }
+        p {
+          @include b18r;
+          margin-bottom: 60px;
+        }
+      }
+      .noticeRight {
+       .noticeBoxWrap{
+        margin-top: 30px;
+        .noticeBox {
+
+          .noticeBoxDate {
+            @include m14b;
+          }
+          h1 {
+            @include b18b;
+            padding: 20px 0;
+          }
+          p {
+            @include b16l;
+          }
+          .noticeBoxLogo {
           }
         }
+      }
+    } 
     }
-}
+  }
+  @include mobileS{
+    padding:0 20px;;
+    height: 1540px;
+    .noticeSectionMain {
+        margin-top: 100px;
+      .noticeLeft {
 
-@include tablet{
-    .NoticeSection{
-        max-width:1024px;
-        height:100%;
-        padding:0 50px;
-        .noticeSectionMain{
-            flex-direction: column;
-            .noticeLeft{
-                padding-top: 271px;
-                margin:0 auto;
-                text-align: center;
-                p{
-                    margin-bottom: 70px;
-                }
-            }
-            .noticeRight{
-                margin: 0 auto;
-                padding-top: 50px;
-                .noticeBox{
-                    padding:20px;
-                }
-            }
+        h1 {
+
         }
-    }
+        p {
+            margin: 15px 0 50px 0;
+        }
+      }
+      .noticeRight {
+       .noticeBoxWrap{
+        flex-direction: column;
+        .noticeBox {
+            width:100%;
+            height:270px;
+            margin-bottom: 10px;
+          .noticeBoxDate {
 
-}
+          }
+          h1 {
+
+          }
+          p {
+
+          }
+          .noticeBoxLogo {
+          }
+        }
+      }
+    }
+    }
+  }
+  }
+

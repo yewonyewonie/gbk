@@ -8,18 +8,14 @@ const SubProgram = () => {
   const [activeTab, setActiveTab] = useState(1);
 
   useEffect(() => {
-    console.log('Tab from URL:', tab);
+
     if (!tab) {
-      console.log('Setting default tab: 1');
       setActiveTab(1);
     } else if (tab === 'star') {
-      console.log('Setting active tab: 1');
       setActiveTab(1);
     } else if (tab === 'moon') {
-      console.log('Setting active tab: 2');
       setActiveTab(2);
     } else if (tab === 'night') {
-      console.log('Setting active tab: 3');
       setActiveTab(3);
     }
   }, [tab]);
@@ -67,6 +63,7 @@ const SubProgram = () => {
               </div>
             </div>
           </div>
+          <div className="subProgramFooter"></div>
         </div>
       );
 
@@ -146,8 +143,6 @@ const SubProgram = () => {
     }
   };
 
-
-
   return (
     <section className="subProgram">
       <div className="subProgramHeader">
@@ -171,7 +166,7 @@ const SubProgram = () => {
         </div>
         <TabContent />
       </div>
-      <div className="subProgramFooter"></div>
+      {/* <div className="subProgramFooter"></div> */}
     </section>
   );
 };

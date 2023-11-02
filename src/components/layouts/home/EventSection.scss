@@ -4,15 +4,6 @@
   width: 100%;
   height: 100vh;
   background: linear-gradient(to bottom, #1a124a 50%, #433577);
-
-  .eventSectionFooter{
-    width:100%;
-    height:660px;
-    background: url(../../../asset/img/footerWeb.png) center;
-    background-size: cover;
-    position: relative;
-    bottom:660px;
-  }
   .onlineEventMain {
     max-width: 1440px;
     height: 100%;
@@ -27,7 +18,6 @@
       @include w48b;
       padding-bottom: 50px;
     }
-
     .onlineWrap {
       display: flex;
       justify-content: space-between;
@@ -36,6 +26,8 @@
         width: calc((100% - 60px) / 3);
         height: 100%;
         background-color: white;
+        position: relative;
+        z-index: 10;
 
         .onlineBoxPic {
           width: 100%;
@@ -76,32 +68,86 @@
       }
     }
   }
-}
+  .eventSectionFooter{
+    width:100%;
+    height:665px;
+    background: url(../../../asset/img/footerWeb.png) no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    position: relative;
+    bottom:663px;
+  }
+  @include tablet {
 
-@include tablet {
-  .onlineEvent {
-    padding: 0 50px;
-    .onlineEventMain {
-      .onlineWrap {
-        .onlineBox {
-          .onlineBoxPic {
-            height: 242px;
-          }
-
-          .onlineBoxTxt {
-            height: 166px;
-
-            h1 {
-              @include b18r;
-              font-weight: bold;
+      .onlineEventMain {
+        padding: 0 50px;
+  
+        .onlineWrap {
+          .onlineBox {
+            .onlineBoxPic {
+              height: 242px;
             }
+  
+            .onlineBoxTxt {
+              height: 150px;
+  
+              h1 {
+                @include b18r;
+                font-weight: bold;
+              }
+  
+              div {
+                padding: 10px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    @include mobileF{
+      height:2552px;
+      .onlineEventMain{
+        padding:0 30px;
+        .onlineWrap{
+          flex-direction: column;
+          .onlineBox{
+            width:100%;
+            margin-bottom: 20px;
+            .onlineBoxPic{
+              height:540px;
+            }
+            .onlineBoxTxt{
+              height:184px;
+              div{
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+    @include mobileS{
+      height:2032px;
+      .onlineEventMain{
+            padding:0 20px;
+        .onlineWrap{
 
-            div {
-              padding: 10px 0;
+          .onlineBox{
+
+            .onlineBoxPic{
+               height:361px;
+            }
+            .onlineBoxTxt{
+              height:154px;
+              div{
+
+              }
             }
           }
         }
       }
     }
   }
-}
+
+
+

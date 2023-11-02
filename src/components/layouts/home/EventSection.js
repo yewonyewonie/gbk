@@ -1,5 +1,6 @@
 import BasicButton from '../../btn/BasicButton';
 import './EventSection.scss';
+// import FooterImg from '../../../asset/img/footerWeb.png';
 
 const EventSection = () => {
     return ( 
@@ -41,6 +42,7 @@ const EventSection = () => {
               
             </div>
             <div className="eventSectionFooter"></div>
+            {/* <img className="eventSectionFooter" src={FooterImg}></img> */}
         </section>
      );
 };
