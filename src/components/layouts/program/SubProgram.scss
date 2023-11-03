@@ -2,7 +2,6 @@
 
 .subProgram {
     width: 100%;
-    // height: 2000px;
     background: linear-gradient(to bottom, #1a124a 50%, #433577);
     .subProgramHeader{
         width:100%;
@@ -23,15 +22,7 @@
             @include w18b;
         }
     }
-    // .subProgramFooter{
-    //     width:100%;
-    //     height:700px;
-    //     background: url(../../../asset/img/footerWeb.png) center;
-    //     background-size: cover;
-    //     position:relative;
-    //     z-index: 100;
-    //     bottom:0px;
-    // }
+
 
     .subProgramScreen {
         padding-top: 100px;
@@ -144,13 +135,13 @@
       }
     @include tablet{
       
-        // height:1705px;
+
         .subProgramScreen{
             width:100%;
             height:100%;
 
             padding:0 50px;
-            // height: 100%;
+
             .tabWrap{
                 margin-top: 60px;
             }
@@ -182,8 +173,6 @@
         }
 }
     @include mobileF{
-        // height:2525px;
-
         .subProgramScreen{
             width:100%;
             height:100%;

@@ -101,6 +101,7 @@
         border-bottom: 1px solid #d9d9d9;
         .subGuideTableTitle{
           @include b18b;
+          white-space: nowrap;
           // letter-spacing: 3px;
         }
         .subGuideTableText{
@@ -134,7 +135,7 @@
           justify-content: space-between;
           .mapAddress {
             p {
-              @include b24r;
+              @include b24b;
             }
             display: flex;
             .mapIcon {
@@ -241,8 +242,8 @@
         .subGuideBoxWrap{
           .subGuideBox{
             width:calc((100% - 20px) / 2);
-            height:250px;
             margin-top: 20px;
+            padding: 50px 0;
           }
         }
         .transport{
@@ -256,17 +257,86 @@
     }
   }
   @include mobileF{
+    .subGuideHeader{
+      h1{
+        @include w40b;
+      }
+      p{
+        @include w16r
+      }
+    }
     .subGuideScreen{
+      padding:0 30px;
       .tabWrap{
       }
       .subGuideContent{
+        .subGuideTitle{
+          @include b40b;
+        }
         .subGuideBoxWrap{
+  
           .subGuideBox{
+            padding: 40px 0;
+            p{
+              @include b16r;
+              span{
+                font-size: 16px;
+              }
+            }
           }
         }
         .transport{
+
+          h1{
+            @include b24b;
+          }
+          padding-bottom: 150px;
           .transportWrap{
-            .tabletFlex{
+            p{
+              font-size: 16px;
+              .tabletFlex{
+                font-size: 16px;
+              }
+              .mobileFlex{
+                font-size: 16px;
+              }
+              span{
+                font-size: 16px;
+              }
+            }
+            }
+            .guideCaution{
+              font-size: 14px;
+            }
+        }
+        .guideMap{
+          h1{
+            @include b40b;
+          }
+          .addressTel{
+            flex-direction: column;
+            .mapAddress{
+              p{
+                @include b18b;
+              }
+            }
+            .telFax{
+
+              .asdf{
+               display: flex;
+               padding-top: 20px;
+               .iconBg{
+                margin:0;
+               }
+               p{
+                font-size: 16px;
+                span{
+                  font-size: 16px;
+                }
+               }
+              }
+              flex-direction: column;
+
             }
           }
         }
@@ -274,36 +344,118 @@
     }
   }
   @include mobileS{
-    .subGuideScreen{
-      .tabWrap{
-        margin-top: 100px;
+    .subGuideHeader{
+      h1{
+        @include font32b;
       }
-      padding:0 50px;
-      .subGuideContent{
-        .subGuideBoxWrap{
-          .subGuideBox{
-            width:calc((100% - 20px) / 2);
-            height:250px;
-            margin-top: 20px;
-          }
+      p{
+        font-size: 14px;
+      }
+    }
+    .subGuideScreen{
+      padding:0 20px;
+      .tabWrap{
+        .tabMenu{
+          @include b18l
         }
-        .transport{
-          .transportWrap{
-            .mobileFlex{
-              display: flex;
+        .tabMenu.tabAcitve{
+          @include b18b
+        }
+      }
+      .subGuideContent{
+        .subGuideTitle{
+          @include font32b;
+        }
+        .subGuideBoxWrap{
+  
+          .subGuideBox{
+            padding: 30px 0;
+            height:100%;
+            h2{
+              padding-bottom: 10px;
+              font-size: 18px;
+            }
+            p{
+              font-size: 14px;
+              span{
+                font-size: 14px;
+              }
+            }
+            div{
+              margin-top: 10px;
             }
           }
+        }
+        .subGuideNotification{
+          h2{
+            font-size: 18px;
+          }
+          .subGuideTableTitle{
+            font-size: 14px;
+          }
+          .subGuideTableText{
+            font-size: 14px;
+          }
+          p{
+            font-size: 14px;
+          }
+          .subGuideCaution{
+            font-size: 14px;
+          }
+        }
+        
+        .transport{
+          padding-bottom: 100px;
+
           .transportWrap{
             p{
-              @include b14b;
+              padding-bottom: 20px;
+              .tabletFlex{
+                font-size: 14px;
+              }
+              .mobileFlex{
+                font-size: 14px;
+                display: flex;
+                flex-direction: column;
+              }
               span{
-                @include b14r;
+                font-size: 14px;
+              }
+            }
+            }
+            .guideCaution{
+
+            }
+        }
+        .guideMap{
+          h1{
+            font-size: 32px;
+          }
+          .addressTel{
+
+            .mapAddress{
+              p{
+
+              }
+            }
+            .telFax{
+
+              .asdf{
+
+               .iconBg{
+
+               }
+               p{
+                font-size: 14px;
+                span{
+                font-size: 14px;
+                }
+               }
               }
             }
           }
         }
-
       }
     }
   }
-}
+  }

@@ -63,7 +63,7 @@ const SubProgram = () => {
               </div>
             </div>
           </div>
-          <div className="subProgramFooter"></div>
+          {/* <div className="subProgramFooter"></div> */}
         </div>
       );
 
@@ -100,6 +100,7 @@ const SubProgram = () => {
               </div>
             </div>
           </div>
+          {/* <div className="subProgramFooter"></div> */}
         </div>
       );
 
@@ -138,6 +139,7 @@ const SubProgram = () => {
               </div>
             </div>
           </div>
+          {/* <div className="subProgramFooter"></div> */}
         </div>
       );
     }
@@ -166,7 +168,7 @@ const SubProgram = () => {
         </div>
         <TabContent />
       </div>
-      {/* <div className="subProgramFooter"></div> */}
+      <div className="subProgramFooter"></div>
     </section>
   );
 };
