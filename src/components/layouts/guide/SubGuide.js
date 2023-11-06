@@ -47,7 +47,7 @@ const SubGuide = () => {
     <section className="subGuide">
       <div className="subGuideHeader">
         <h1>행사안내</h1>
-        <p>내용을 입력하세요</p>
+        <p>궁중의 아름다움을 만나다</p>
       </div>
       <div className="subGuideScreen">
         <div className="tabWrap">

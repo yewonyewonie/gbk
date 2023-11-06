@@ -49,7 +49,7 @@ const SubProgram = () => {
       <div className="subProgramHeader">
         <div className="subProgramHeaderPic"></div>
         <h1>프로그램</h1>
-        <p>문구를 입력해주세요</p>
+        <p>문화와 예술의 향연, 다양한 프로그램 안내</p>
       </div>
       <div className="subProgramScreen">
         <div className="tabWrap">
