@@ -1,0 +1,256 @@
+@import '../../../style/mixin';
+
+.guideSection{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    .moon{
+        width: 310px;
+        height: 310px;
+        background: url(../../../asset/img/moon.png);
+        background-size: cover;
+        position: absolute;
+        top: 110px;
+        right : 250px;
+        z-index: 1;
+        opacity: 0.8;
+    }
+    background: url(../../../asset/img/all_bg.png);
+    background-color: #1E154E;
+    .sectionScreen{
+        @include screenType1;
+        height: 100vh;
+        flex-direction: column;
+        position: relative;
+        .fontWrap{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .fontWrapL{
+            margin-top: 195px;
+            z-index: 3;
+            h2{
+                @include w120eb ;
+                margin-bottom : 50px;
+            }
+            h3{
+                @include w36eb;
+                margin-bottom : 20px;
+                z-index : 2;
+            }
+            p{
+                @include w18r;
+                z-index : 2;
+            }
+        }
+            .fontWrapR{
+                margin-top: 600px;
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                .guideText {
+                    /* background-color: #33BBC5; */
+                    width: 500px;
+                    padding: 10px;
+                    text-align: end;
+                    color: white;
+                    font-size: 24px;                        
+                    margin-bottom: 20px;
+                    overflow: hidden; /* 초과된 부분을 가리기 위해 추가 */
+                    position: relative; /* 자식 요소의 위치를 상대적으로 설정하기 위해 추가 */
+                    transition: color 0.3s ease, border-bottom 0.3s ease, font-weight 0.3s ease;
+                    p{
+                        transition: font-size 0.3s ease;
+                    }
+                }            
+                .line{          
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;    
+                    width: 0; /* 초기에는 보더가 없도록 설정 */
+                    height: 2px;
+                    background-color: #33bbc5;
+                    transition: width 0.3s ease  /* width 속성에 대한 전환 효과 설정 */
+                }              
+                .lineHover {   
+                    width: 100%; /* 마우스 호버 시에 width 값을 100%로 변경하여 나타나게 함 */
+                }               
+                .big{
+                    font-size: 40px;               
+                    color: #33bbc5;
+                    font-weight: 700;
+                }
+            }
+        }
+}
+    .guideScreenWrap{
+        width: 65%;
+        height: 680px;
+        position: absolute;
+        left: 0; bottom: 0;
+        background-size: cover;
+        transition: transform 0.5s ease-in-out;
+        z-index: 2;
+    }
+
+    @include desktop{
+        width: 100%;
+        padding: 0px 50px;
+        .sectionScreen{
+            width: 100%;
+        }
+        .guideScreenWrap{
+            width: 68%;
+        }
+    }
+
+    @include tablet{
+        .moon{
+            width: 200px;
+            height: 200px;
+        }
+        .sectionScreen{
+            width: 100%;
+            .moon{
+                width: 170px;
+                height: 170px;
+                position: absolute;
+                top: 50px;
+                right : 50px;
+            }
+            .fontWrap{
+                margin-top: 300px;
+                flex-direction: column;
+                .fontWrapL{
+                    margin-top: 0px;
+                    h2{
+                        @include w48b;
+                        margin-bottom:20px;
+                    }
+                    h3{
+                        @include w24eb
+                    }
+                }
+                .fontWrapR{
+                    margin: 50px 0 0 0;
+                    justify-content: flex-end;
+                    .guideText{ 
+                        font-size: 24px;
+                        padding: 0 20px;
+                    }
+                    .guideText:hover {
+                        font-size: 40px;
+                      }
+                }          
+            }
+        }
+        .guideScreenWrap{
+            width: 70%;
+            height: 50%;
+        }
+    }
+
+    @include mobileF{
+        height: 1200px;
+        .moon{
+            right : 100px;
+            top: 40px;
+        }
+        padding: 0px 30px;
+        .sectionScreen{
+            width: 100%;
+            .fontWrap{
+                justify-content: end;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin-top: 200px;
+                .fontWrapL{
+                    margin-top: 0px;
+                    h2{
+                        @include w40b;
+                        margin-bottom:15px;
+                    }
+                    h3{
+                        @include w24eb;
+                        margin-bottom : 15px;
+                    }
+                    p{
+                       @include  w16l;
+                       margin : 0px
+                    }
+                }
+                .fontWrapR{
+                    flex-direction: row;
+                    margin: 15px 0 0 0;
+                    .guideText{ 
+                        font-size: 24px;
+                        padding: 0px;
+                    }
+                    p{
+                        @include w18r;
+                        text-align: center;
+                        border: none;
+                        padding: 0px 15px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        .guideScreenWrap{
+            width: 100%;
+            height: 60%;
+        }
+    }
+
+    @include mobileS{
+        padding: 0px 20px;
+        height: 930px;
+        .moon{
+            width: 150px;
+            height: 150px;
+            right : 60px;
+            top: 90px;
+        }
+        .sectionScreen{
+            width: 100%;
+            .fontWrap{
+                justify-content: end;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin-top: 220px;
+                .fontWrapL{
+                    margin-top: 0px;
+                    h2{
+                        @include font32b;
+                        color: white;
+                        margin-bottom:15px;
+                    }
+                    h3{
+                        @include w18b;
+                        margin-bottom : 15px;
+                    }
+                    p{
+                       @include  w14l;
+                    }
+                }
+                .fontWrapR{
+                    flex-direction: row;
+                    p{
+                        @include w14r;
+                        text-align: center;
+                        border: none;
+                        padding: 0 15px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+        .guideScreenWrap{
+            width: 100%;
+            height: 482px;
+        }
+    }
+}

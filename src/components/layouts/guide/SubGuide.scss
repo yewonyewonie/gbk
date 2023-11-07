@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     justify-content:end;
-    background: url(../../../asset/img/img/달빛기행/dal-22.png) center;
+    background: url(../../../asset/img/subtop2.png) center;
     background-size: cover;
     padding-bottom: 100px;
     h1 {
@@ -29,6 +29,7 @@
       display: flex;
       justify-content: center;
       text-align: center;
+      margin:0;
       .tabMenu {
         @include b24r;
         font-weight: 300;

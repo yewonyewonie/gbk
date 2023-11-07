@@ -167,6 +167,12 @@ $colors: (
   font-weight: 700;
 }
 
+@mixin w16l {
+  font-size: 16px;
+  color: map-get($map: $colors, $key: wFont01);
+  font-weight: 300;
+}
+
 @mixin m16b {
   font-size: 16px;
   color: map-get($map: $colors, $key: mFont01);
@@ -189,6 +195,12 @@ $colors: (
   font-size: 14px;
   color: map-get($map: $colors, $key: wFont01);
   font-weight: 400;
+}
+
+@mixin w14l {
+  font-size: 14px;
+  color: map-get($map: $colors, $key: wFont01);
+  font-weight: 300;
 }
 
 @mixin b14b {
