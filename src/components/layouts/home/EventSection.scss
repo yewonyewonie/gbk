@@ -3,8 +3,10 @@
 .onlineEvent {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to bottom, #1a124a 50%, #433577);
+  background: url(../../../asset/img/all_bg.png), linear-gradient(to bottom, #1a124a 50%, #433577);
+  
   .onlineEventMain {
+
     max-width: 1440px;
     height: 100%;
     margin: 0 auto;

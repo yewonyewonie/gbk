@@ -1,28 +1,26 @@
 @import '../style/mixin';
 
 .tabWrap {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin:0;
-  .tabMenu {
-    @include b24r;
-    font-weight: 300;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 60px;
+    align-items: center;
+
+    .tabDivide {
+        padding: 0 20px;
+        @include b18r;
+    }
+
+    .tabMenu {
+        @include b18r;
+        font-weight: 300;
+        cursor: pointer;
+    }
+    .tabMenu.tabAcitve{
+        font-weight: bold;
+    }
   }
-  .tabDivide {
-    padding: 0 20px;
-    @include b24r;
-  }
-  .tabMenu.tabAcitve {
-    @include b24b;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #111111;
-  }
-}
-.subProgramScreen{
-  padding-top: 100px;
-}
   // 탭 scss 끝
   .h459{
     height: 459px;
@@ -35,7 +33,7 @@
     text-align: center;
     h1{
       @include b48b;
-      margin-top: 58px;
+      margin-top: 116px;
     }
     .ImgBox{
       margin: 0 auto;
@@ -107,6 +105,7 @@
         margin: 0 auto;
         width: 1440px;
         margin-top: 50px;
+        margin-bottom: 200px;
         box-sizing: border-box;
         display: grid;
         grid-template-columns: 2 1fr;
@@ -122,38 +121,40 @@
         gap: 10px;
         .GbkImg9{
           grid-area: GbkImg9;
+          background: url(../asset/img/GBK-5.png);
           height: 815px;
-          background: url(../asset/img/byeol-26.png);
         }
         .GbkImg10{
           grid-area: GbkImg10;
-          background: url(../asset/img/byeol-28.png);
+          background: url(../asset/img/byeol-31.png);
         }
         .GbkImg11{
           grid-area: GbkImg11;
-          background: url(../asset/img/byeol-29.png);
+          background: url(../asset/img/byeol-23.png);
         }
         .GbkImg12{
           grid-area: GbkImg12;
-          background: url(../asset/img/byeol-30.png);
+          background: url(../asset/img/byeol-26.png);
         }
         .GbkImg13{
           grid-area: GbkImg13;
-          background: url(../asset/img/byeol-31.png);
+          background: url(../asset/img/byeol-28.png);
         }
         .GbkImg14{
           grid-area: GbkImg14;
+          background: url(../asset/img/byeol-29.png);
         }
         .GbkImg15{
           grid-area: GbkImg15; 
+          background: url(../asset/img/byeol-30.png);
         }
         .GbkImg16{
           grid-area: GbkImg16;
+          background: url(../asset/img/byeol-31.png);
         }
         .GbkGride{
           background-size: cover;
           background-position: center;
-          background-color: blueviolet;
         }
       }
     }
@@ -227,7 +228,7 @@
     text-align: center;
     h1{
       @include b48b;
-      margin-top: 58px;
+      margin-top: 116px;
     }
     .ImgBox3{
       margin: 0 auto;
@@ -282,7 +283,6 @@
       .GbkGride{
         background-size: cover;
         background-position: center;
-        background-color: blue;
       }
 
     }
@@ -301,6 +301,7 @@
         margin: 0 auto;
         width: 1440px;
         margin-top: 50px;
+        margin-bottom: 200px;
         box-sizing: border-box;
         display: grid;
         grid-template-columns: 2 1fr;
@@ -350,7 +351,6 @@
         .GbkGride{
           background-size: cover;
           background-position: center;
-          background-color: blueviolet;
         }
       }
     }
@@ -424,7 +424,7 @@
     text-align: center;
     h1{
       @include b48b;
-      margin-top: 58px;
+      margin-top: 116px;
     }
     .ImgBox5{
       margin: 0 auto;
@@ -477,7 +477,6 @@
         background: url(../asset/img/seokjojeon-37.png);
       }
       .GbkGride{
-        background-color: yellow;
         background-size: cover;
         background-position: center;;
       }
@@ -497,6 +496,7 @@
         margin: 0 auto;
         width: 1440px;
         margin-top: 50px;
+        margin-bottom: 200px;
         box-sizing: border-box;
         display: grid;
         grid-template-columns: 2 1fr;
@@ -563,7 +563,6 @@
         }
       }
     }
-
     @include mobileF{
       width: 100%;
       padding: 0 30px;

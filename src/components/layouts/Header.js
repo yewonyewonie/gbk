@@ -96,11 +96,11 @@ const Header = () => {
               </li>
             ) : (
               <li onClick={SignInHandler}>
-                <Link>로그인</Link>
+                <Link to='/users'>로그인</Link>
               </li>
             )}
             <li>
-              <Link>회원가입</Link>
+              <Link to='/member'>회원가입</Link>
             </li>
           </ul>
         </nav>

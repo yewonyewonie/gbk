@@ -8,6 +8,8 @@ import NoticePage from './pages/NoticePage';
 import UsersPage from './pages/UsersPage';
 import Header from './components/layouts/Header';
 import Footer from './components/layouts/Footer';
+import SignUpPage from './pages/SignUpPage';
+import MembersPage from './pages/MembersPage';
 // import FooterSecond from './components/layouts/FooterSecond';
 
 
@@ -24,6 +26,8 @@ function App() {
 		<Route path='/gallery/:tab' element={<GalleryPage></GalleryPage>}></Route>
 		<Route path='/notice' element={<NoticePage></NoticePage>}></Route>
 		<Route path='/users' element={<UsersPage/>}></Route>
+		<Route path='/signup' element={<SignUpPage/>}></Route>	
+		<Route path='/member' element={<MembersPage/>}></Route>	
 	</Routes>
 	<Footer />
 	{/* <FooterSecond /> */}

@@ -59,18 +59,22 @@ const menuItems = [
     items: [
       {
         name: '별빛야행',
-        link: '/booking/star',
+        link: 'https://www.ticketlink.co.kr/product/45379',
+        target: '_blank',
       },
       {
         name: '달빛기행',
-        link: '/booking/moon',
+        link: 'https://www.ticketlink.co.kr/product/45329',
+        target: '_blank',
       },
       {
         name: '밤의석조전',
-        link: '/booking/night',
+        link: 'https://www.ticketlink.co.kr/product/45642',
+        target: '_blank',
       },
     ],
-    link: '/booking',
+    link: 'https://www.ticketlink.co.kr/product/45379',
+    target: '_blank',
   },
   {
     category: '알림마당',
