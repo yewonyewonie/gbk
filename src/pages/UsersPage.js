@@ -25,7 +25,7 @@ const UsersPage = () => {
               <p>비밀번호 찾기</p>
             </Link>
         </div>
-        <p className="address">www.naver.com</p>
+        <p className="address">www.walkatnight.com</p>
         </div>
       </div>
       <div className="FooterImg"></div>
