@@ -1,6 +1,6 @@
-  // NoticePage.js
   import React, { useState, useRef , useEffect } from 'react';
   import './NoticePage.scss';
+import FooterSecond from '../components/layouts/FooterSecond';
 
   const NoticePage = () => {
     const [activeTab, setActiveTab] = useState('notice');
@@ -198,6 +198,10 @@
 
     return (
       <main className="NoticePage">
+        <div className="NoticePageHeader">
+          <h1>알림마당</h1>
+          <p>공지사항 입니다.</p>
+        </div>
         <div className="noticeSection">
           <div className="noticeBtn">
             <div>
@@ -229,6 +233,7 @@
           </div>
           {renderTabContent()}
         </div>
+        <FooterSecond />
       </main>
     );
   };

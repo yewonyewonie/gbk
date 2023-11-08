@@ -3,6 +3,7 @@ import  { useState , useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './GalleryPage.scss';
 import TopLayer from '../components/layouts/TopLayer';
+import FooterSecond from './../components/layouts/FooterSecond';
 
 const GalleryPage = () => {
   const [isCont2Visible, setIsCont2Visible] = useState(false); //경복궁 더보기 클릭하면 창나타내며 버튼 사라짐
@@ -169,6 +170,7 @@ const GalleryPage = () => {
         </div>
         <TabContent />
       </div>
+      <FooterSecond />
     </main>
   );
 };

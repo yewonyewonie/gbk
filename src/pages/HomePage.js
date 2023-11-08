@@ -6,6 +6,7 @@ import GuideSection from '../components/layouts/home/GuideSection';
 // import IntroSection from '../components/layouts/home/IntroSection';
 import NoticeSection from '../components/layouts/home/NoticeSection';
 import ProgramSection from '../components/layouts/home/ProgramSection';
+import Footer from './../components/layouts/Footer';
 
 const HomePage = () => {
   useEffect(() => {
@@ -49,6 +50,7 @@ const HomePage = () => {
       <BookingSection></BookingSection>
       <NoticeSection></NoticeSection>
       <EventSection></EventSection>
+      <Footer />
     </main>
   );
 };

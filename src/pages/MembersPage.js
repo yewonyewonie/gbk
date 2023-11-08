@@ -8,7 +8,8 @@ const MembersPage = () => {
       setActiveTab(tab);
     };
 
-    return ( <main className='MembersPage'>
+    return ( 
+    <main className='MembersPage'>
         <div className='Bg'>
             <div className='UsersMemberWrap'>
                 <div className='logo'></div>
@@ -30,9 +31,10 @@ const MembersPage = () => {
             </div>
           )}
         </div>
+        <div className="MembersPageFooter"></div>
     </div>
 
-        </main>
+</main>
      );
 };
  

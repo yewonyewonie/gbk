@@ -5,10 +5,10 @@ box-sizing: border-box}
 .SignUpPage{
     @include screenProtector;
     background: linear-gradient(to bottom, #1a124a 50%, #433577);
-    height: 100vh;
     position: relative;
       .UsersSignWrap{
         width: 460px;
+        height: 100vh;
         margin: 0 auto;
         padding: 150px 20px 0 20px;
         .logo{
@@ -43,12 +43,12 @@ box-sizing: border-box}
       }
       .BkImg{
         width: 100%;
-        height:113px;
+        height:130px;
         // background: url(../asset/img/footerWeb.png);
         background: url(../asset/img/footerBg.png);
         background-size: cover;
         background-position: center;
-        position: absolute;
+        position: relative;
         left:  0;
         bottom: 0;
         z-index: 99;

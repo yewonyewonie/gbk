@@ -1,3 +1,4 @@
+import Footer from '../components/layouts/Footer';
 import Login from './KakaoLogin';
 import './UsersPage.scss';
 import { Link } from 'react-router-dom';
@@ -30,6 +31,7 @@ const UsersPage = () => {
       </div>
       <div className="FooterImg"></div>
     </div>
+    <Footer />
   </main>;
 }; 
 

@@ -3,30 +3,48 @@
 .NoticePage{
     width: 100%;
     margin: 0 auto;
-    .subNoticeHeader{
-        position: relative;
+    .NoticePageHeader{
         width:100%;
         height:400px;
-        background-color: #000000;
+        background:url(../asset/img/subNoticeHeader.png) center;
+        background-size: cover;
         text-align: center;
         display: flex;
         flex-direction: column;
-        background: url(../asset/img/subNoticeHeader.png) center;
-        background-size: cover;
-        .noticeTxt{
-            position: absolute;
-            bottom: 100px;
-            left: 50%;
-            transform: translate(-50%, 0);
-            h1{
-                @include w48b;
-                margin-bottom: 30px
-            }
-            p{
-                @include w18b;
-            }
+        justify-content: end;
+        padding-bottom: 100px;
+        h1{
+            @include w48b;
+            padding-bottom: 20px
+        }
+        p{
+            @include w18r;
         }
     }
+    // .subNoticeHeader{
+    //     position: relative;
+    //     width:100%;
+    //     height:400px;
+    //     background-color: #000000;
+    //     text-align: center;
+    //     display: flex;
+    //     flex-direction: column;
+    //     background: url(../asset/img/subNoticeHeader.png) center;
+    //     background-size: cover;
+    //     .noticeTxt{
+    //         position: absolute;
+    //         bottom: 100px;
+    //         left: 50%;
+    //         transform: translate(-50%, 0);
+    //         h1{
+    //             @include w48b;
+    //             margin-bottom: 30px
+    //         }
+    //         p{
+    //             @include w18b;
+    //         }
+    //     }
+    // }
     .noticeSection{
         width: 1440px;
         margin: 100px auto 200px;

@@ -1,7 +1,7 @@
 @import '../../style/mixin';
 
 .footer{
-    height: 400px;
+    height: 320px;
     @include screenType2;
     background-color: #100516;
     .footerWrap{
@@ -110,7 +110,7 @@
 };
 
 .footerSecond{
-    height: 400px;
+    height: 320px;
     @include screenType2;
     background-color: #DDDDDD;
     .footerWrap{

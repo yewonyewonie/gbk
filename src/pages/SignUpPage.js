@@ -1,3 +1,4 @@
+import Footer from '../components/layouts/Footer';
 import './SignUpPage.scss';
 
 const SignUpPage = () => {
@@ -19,6 +20,7 @@ const SignUpPage = () => {
         </div>
       </div>
       <div className='BkImg'></div>
+      <Footer />
     </main>;
 };
  

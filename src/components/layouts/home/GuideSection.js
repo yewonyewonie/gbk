@@ -69,7 +69,7 @@ const GuideSection = () => {
         <div className='fontWrap'>
           <div className='fontWrapL'>
             <h2 data-aos="fade-down">{hoveredH2}</h2>
-            <h3 data-aos="fade-down" data-aos-delay="500">500년 역사의 국보 체험 </h3>
+            <h3 data-aos="fade-down" data-aos-delay="500">630년 역사의 국보 체험 </h3>
             <p data-aos="fade-down" data-aos-delay="500">
             서울의 대표적인 고궁 세 곳,<br/>
             분위기 있는 조명 속에서 역사의 아름다움을 만나보세요. <br/>

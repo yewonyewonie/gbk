@@ -7,7 +7,7 @@ import GalleryPage from './pages/GalleryPage';
 import NoticePage from './pages/NoticePage';
 import UsersPage from './pages/UsersPage';
 import Header from './components/layouts/Header';
-import Footer from './components/layouts/Footer';
+// import Footer from './components/layouts/Footer';
 import SignUpPage from './pages/SignUpPage';
 import MembersPage from './pages/MembersPage';
 // import FooterSecond from './components/layouts/FooterSecond';
@@ -29,7 +29,7 @@ function App() {
 		<Route path='/signup' element={<SignUpPage/>}></Route>	
 		<Route path='/member' element={<MembersPage/>}></Route>	
 	</Routes>
-	<Footer />
+	{/* <Footer /> */}
 	{/* <FooterSecond /> */}
 	</div>;
 }
