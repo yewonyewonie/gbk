@@ -67,10 +67,10 @@ const GuideSection = () => {
         <div className='moon'></div>
         <div className='sectionScreen'>
         <div className='fontWrap'>
-          <div className='fontWrapL' data-aos="fade-down">
-            <h2>{hoveredH2}</h2>
-            <h3>500년 역사의 국보 체험 </h3>
-            <p>
+          <div className='fontWrapL'>
+            <h2 data-aos="fade-down">{hoveredH2}</h2>
+            <h3 data-aos="fade-down" data-aos-delay="500">500년 역사의 국보 체험 </h3>
+            <p data-aos="fade-down" data-aos-delay="500">
             서울의 대표적인 고궁 세 곳,<br/>
             분위기 있는 조명 속에서 역사의 아름다움을 만나보세요. <br/>
             궁중문화를 느낄 수 있는 특별한 밤, 궁궐에서의 시간을 즐겨보세요. <br/>

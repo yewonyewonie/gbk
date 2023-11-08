@@ -153,7 +153,7 @@ const GalleryPage = () => {
   return (
     <main>
       <TopLayer name='갤러리'/>
-      <div className="subProgramScreen">
+      <div className="galleryScreen">
         <div className="tabWrap">
           <div className={`tabMenu ${activeTab === 1 ? 'tabAcitve' : ''}`} onClick={() => changeTab(1)}>
             별빛야행

@@ -18,6 +18,7 @@ import DSK2 from '../../../asset/img/DSK-2.png';
 import DSK3 from '../../../asset/img/DSK-3.png';
 import DSK4 from '../../../asset/img/DSK-4.png';
 import DSK5 from '../../../asset/img/DSK-5.png';
+// import BasicButton from '../../btn/BasicButton';
 
 
 
@@ -88,11 +89,13 @@ const GallerySection = () => {
   return <section className="GallerySection">
   <div className='slider-container'>
     <div className='GalleryTitleBox'>
-      <p className='GalleryMent'>조명속에 수놓아진 역사의 아름다움</p>
-      <p className='GalleryTitle'>갤러리</p>
+      <p className='GalleryMent' data-aos="fade-down">조명속에 수놓아진 역사의 아름다움</p>
+      <p className='GalleryTitle' data-aos="fade-down" data-aos-delay="350">갤러리</p>
       <Link to="/gallery" target="_blank">
-        <p className='ViewBtn'>VIEW MORE</p>
+        <button className='ViewBtn' data-aos="fade-down" data-aos-delay="700">VIEW MORE</button>
       </Link>
+      {/* <BasicButton className="galleryButton"/> */}
+      
     </div>
     <div className='slider-container2'>
       <div className='GallerySlideBox2'>

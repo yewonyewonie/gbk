@@ -20,11 +20,11 @@ const ProgramSection = () => {
     <section className="programSection">
       <div className="sectionScreen">
         <div className="txtWrap">
-          <h2>프로그램</h2>
-          <h3>고궁 곳곳에서 열리는 새로운 프로그램과 알림</h3>
+          <h2 data-aos="fade-down">프로그램</h2>
+          <h3 data-aos="fade-down" data-aos-delay="350">고궁 곳곳에서 열리는 새로운 프로그램과 알림</h3>
         </div>
           <div className="slideWrap">
-            <Swiper
+            <Swiper data-aos="fade-down" data-aos-delay="1000"
               pagination={{
                   dynamicBullets: true,
                 }}

@@ -56,6 +56,9 @@
       color: #fff;
       cursor: pointer;
     }
+    .ViewBtn:hover{
+      border:2px solid #33bbC5;
+    }
     .slider-container2{
       width: 100%;
       height: 100vh;
@@ -106,6 +109,10 @@
       left: 50%;
       transform: translate(-50%,0);
       opacity: 0.3;
+    }
+    .galleryButton{
+      border:1px solid #fff;
+      color:#fff;
     }
     .slider-button {
       position: absolute;
@@ -159,14 +166,17 @@
             font-size: 40px;
             margin-bottom: 30px;
         }
-        .ViewBtn{
-            border-radius: 30px;
-            padding: 10px 30px;
-            font-size: 16px;
-            color: #fff;
-            cursor: pointer;
-        }
-      
+        // .ViewBtn{
+        //   width:188px;
+        //   height:46px;
+        //   border:2px solid #fff;
+        //   border-radius: 30px;
+        //   background-color: transparent;
+        //   transition: .5s;
+        //   cursor:pointer;
+        //   @include m16b;
+        // }
+ 
     }
     @media (max-width: 460px){
         .GalleryMent{

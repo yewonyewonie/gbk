@@ -1,26 +1,27 @@
 @import '../style/mixin';
 
 .tabWrap {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 60px;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 
-    .tabDivide {
-        padding: 0 20px;
-        @include b18r;
-    }
 
-    .tabMenu {
-        @include b18r;
-        font-weight: 300;
-        cursor: pointer;
-    }
-    .tabMenu.tabAcitve{
-        font-weight: bold;
-    }
+  .tabDivide {
+      padding: 0 20px;
+      @include b24r;
   }
+
+  .tabMenu {
+      @include b24l;
+      font-weight: 300;
+      cursor: pointer;
+  }
+  .tabMenu.tabAcitve{
+      @include b24b;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #111;
+  }
+}
   // 탭 scss 끝
   .h459{
     height: 459px;
@@ -28,12 +29,15 @@
   .h928{
     height: 928px;
   }
+  .galleryScreen{
+    padding-top: 100px;
+  }
   .GalleryPageGbk{
     width: 100%;
     text-align: center;
     h1{
       @include b48b;
-      margin-top: 116px;
+      margin-top: 58px;
     }
     .ImgBox{
       margin: 0 auto;
@@ -228,7 +232,7 @@
     text-align: center;
     h1{
       @include b48b;
-      margin-top: 116px;
+      margin-top: 58px;
     }
     .ImgBox3{
       margin: 0 auto;
@@ -424,7 +428,7 @@
     text-align: center;
     h1{
       @include b48b;
-      margin-top: 116px;
+      margin-top: 58px;
     }
     .ImgBox5{
       margin: 0 auto;

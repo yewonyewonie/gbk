@@ -6,8 +6,8 @@ const EventSection = () => {
   return (
     <section className="onlineEvent">
       <div className="onlineEventMain">
-        <h1 className="onlineEventMainTitle">온라인 이벤트</h1>
-        <div className="onlineWrap">
+        <h1 className="onlineEventMainTitle" data-aos="fade-down">온라인 이벤트</h1>
+        <div className="onlineWrap" data-aos="fade-down" data-aos-delay="800">
           <div className="onlineBox">
             <div className="onlineBoxPic onlinePic1"></div>
             <div className="onlineBoxTxt">

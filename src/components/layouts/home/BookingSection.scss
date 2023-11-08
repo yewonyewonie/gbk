@@ -19,13 +19,19 @@
     .bookingWrap {
       display: flex;
       justify-content: space-between;
-      // flex-wrap: wrap;
-      .bookingTicket {
+
+      .hidden{
         min-width: calc((100% - 60px) / 3);
-        // height: 620px;
-        // height:100%;
-        padding: 85px 60px;
+        height:621px;
         border: 1px solid rgba(255, 255, 255, 0.5);
+        overflow: hidden;
+      .bookingTicket {
+        width: 100%;
+        height: 100%;
+        transition: transform 1s ease;
+
+        padding: 85px 60px;
+        position: relative;
         h1 {
           text-align: start;
           padding-bottom: 20px;
@@ -70,15 +76,30 @@
           width: 102px;
           height: 36px;
         }
+        // transition: transform 0.3s ease;
+        overflow: hidden;
       }
+    }
+      .bookingTicket:hover{
+        transform: scale(1.2);
+      
+      }
+
+
+      
+      // .ticket1:hover{
+      //   transform: scale(1.2);
+      // }
       .ticket1 {
+        width:100%; height:100%;
         background: url(../../../asset/img/img/예약안내/1920_4_byeol.png) center;
         background-size: cover;
+        overflow: hidden;
       }
       .ticket2 {
         background: url(../../../asset/img/img/예약안내/1920_4_dal.png) center;
         background-size: cover;
-        margin: 0 20px;
+        // margin: 0 20px;
       }
       .ticket3 {
         background: url(../../../asset/img/img/예약안내/1920_4_seokjojeon.png)
