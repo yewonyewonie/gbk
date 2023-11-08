@@ -116,7 +116,7 @@ const BookingSection = () => {
             </div>
           </div>
 
-          <div className="hidden" data-aos="fade-down" data-aos-delay="500">
+          <div className="hidden" data-aos="fade-down" data-aos-delay="1000">
             <div className="bookingTicket">
               <div className="bookingTicketText">
                 <h1>
@@ -134,7 +134,7 @@ const BookingSection = () => {
             </div>
           </div>
 
-          <div className="hidden" data-aos="fade-down" data-aos-delay="500">
+          <div className="hidden" data-aos="fade-down" data-aos-delay="1500">
             <div className="bookingTicket">
               <div className="bookingTicketText">
                 <h1>
