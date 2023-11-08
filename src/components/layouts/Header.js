@@ -100,7 +100,7 @@ const Header = () => {
               </li>
             )}
             <li>
-              <Link to='/member'>회원가입</Link>
+              <Link to='/signUp'>회원가입</Link>
             </li>
           </ul>
         </nav>

@@ -1,5 +1,6 @@
 import Login from './KakaoLogin';
 import './UsersPage.scss';
+import { Link } from 'react-router-dom';
 
 const UsersPage = () => {
   return <main className="UsersPage">
@@ -14,9 +15,15 @@ const UsersPage = () => {
           </div>
           <Login></Login>
           <div className="join">
-            <p>회원가입</p>
-            <p>아이디 찾기</p>
-            <p>비밀번호 찾기</p>
+            <Link to='/signUp'>
+              <p>회원가입</p>
+            </Link>
+            <Link to='/member'>
+              <p>아이디 찾기</p>
+            </Link>
+            <Link to='/member'>
+              <p>비밀번호 찾기</p>
+            </Link>
         </div>
         <p className="address">www.naver.com</p>
         </div>
