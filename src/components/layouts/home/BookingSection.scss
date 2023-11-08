@@ -1,206 +1,3 @@
-// @import '../../../style/mixin';
-// .bookingSection {
-//   width: 100%;
-//   height: 100vh;
-//   background: url(../../../asset/img/all_bg.png);
-//   background-color: #1a124a;
-//   .bookingSectionScreen {
-//     max-width: 1440px;
-//     height: 100%;
-//     margin: 0 auto;
-//      display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     h1 {
-//       @include w48b;
-//       padding: 0 0 50px 0;
-//       text-align: center;
-//     }
-//     .bookingWrap {
-//       display: flex;
-//       justify-content: space-between;
-
-//       .hidden{
-//         min-width: calc((100% - 60px) / 3);
-//         height:621px;
-//         border: 1px solid rgba(255, 255, 255, 0.5);
-//         overflow: hidden;
-//       .bookingTicket {
-//         width: 100%;
-//         height: 100%;
-//         transition: transform 1s ease;
-
-//         padding: 85px 60px;
-//         position: relative;
-//         h1 {
-//           text-align: start;
-//           padding-bottom: 20px;
-//           @include font32r;
-//           span {
-//             @include font32b;
-//           }
-//         }
-//         .bookingTicketLogo {
-//           margin-bottom: 300px;
-//         }
-//         .bookingTicketLink {
-//           width:100%;
-//           color: #ffffff;
-//           display: flex;
-//           justify-content: space-between;
-//           padding-top: 20px;
-//           border-top: 1px solid #ffffff;
-//           cursor: pointer;
-//           div {
-//             @include w18b;
-//           }
-//           a {
-//             color: #ffffff;
-//           }
-//         }
-//         .bookingStarLogo {
-//           background: url(../../../asset/img/icon.png);
-//           background-position: 0px 0px;
-//           width: 86px;
-//           height: 35px;
-//         }
-//         .bookingMoonLogo {
-//           background: url(../../../asset/img/icon.png);
-//           background-position: 1px -43px;
-//           width: 90px;
-//           height: 35px;
-//         }
-//         .bookingNightLogo {
-//           background: url(../../../asset/img/icon.png);
-//           background-position: 0px -85px;
-//           width: 102px;
-//           height: 36px;
-//         }
-//         // transition: transform 0.3s ease;
-//         overflow: hidden;
-//       }
-//     }
-//       .bookingTicket:hover{
-//         transform: scale(1.2);
-      
-//       }
-
-
-      
-//       // .ticket1:hover{
-//       //   transform: scale(1.2);
-//       // }
-//       .ticket1 {
-//         width:100%; height:100%;
-//         background: url(../../../asset/img/img/예약안내/1920_4_byeol.png) center;
-//         background-size: cover;
-//         overflow: hidden;
-//       }
-//       .ticket2 {
-//         background: url(../../../asset/img/img/예약안내/1920_4_dal.png) center;
-//         background-size: cover;
-//         // margin: 0 20px;
-//       }
-//       .ticket3 {
-//         background: url(../../../asset/img/img/예약안내/1920_4_seokjojeon.png)
-//           center;
-//         background-size: cover;
-//       }
-//     }
-//   }
-//   @include tablet {
-//       height: 100%;
-//       padding-top: 200px;
-//       .bookingSectionScreen {
-//         width: 100%;
-  
-//         .bookingWrap {
-//           flex-direction: column;
-//           .bookingTicket {
-//             width: 100%;
-//             height: 432px;
-//             padding: 70px 50px 0 50px;
-//             .bookingTicketLink { 
-//               margin-top: -150px;
-//             }
-//           }
-//           .ticket1 {
-//             background: url(../../../asset/img/img/예약안내/1024_4_byeol.png);
-//           }
-//           .ticket2 {
-//             background: url(../../../asset/img/img/예약안내/1024_4_dal.png);
-//             margin: 20px 0;
-//           }
-//           .ticket3 {
-//             background: url(../../../asset/img/img/예약안내/1024_4_seojojeon.png);
-//           }
-//         }
-//       }
-//     }
-  
-//   @include mobileF {
-//       padding-top:150px;
-//       .bookingSectionScreen {
-//         h1{
-//           @include w40b;
-//         }
-//         .bookingWrap {
-//           flex-direction: column;
-//           .bookingTicket {
-//             height: 368px;
-//             padding:80px 30px 0 30px;
-//             h1{
-//               @include w24r;
-//               span{
-//                 @include w24eb;
-//               }
-//             }
-//             .bookingTicketLogo{
-//             }
-//             .bookingTicketLink {
-//               margin-top: -205px;
-//               a{
-//                 @include w16b;
-//               }
-//             }
-//           }
-//           .ticket1 {
-//             background: url(../../../asset/img/img/예약안내/1024_4_byeol.png)
-//               center;
-//               background-size: cover;
-//           }
-//           .ticket2 {
-//             background: url(../../../asset/img/img/예약안내/1024_4_dal.png) center;
-//             margin: 20px 0;
-//             background-size: cover;
-//           }
-//           .ticket3 {
-//             background: url(../../../asset/img/img/예약안내/1024_4_seojojeon.png)
-//               center;
-//               background-size: cover;
-//           }
-//         }
-//       }
-//     }
-//     @include mobileS{
-//       padding-top: 100px;
-//       .bookingSectionScreen{
-//         h1{
-//           @include font32b;
-//         }
-//       .bookingTicketLink {
-//         a{
-//           @include w14b;
-//         }
-//     }
-//   }
-// }
-// }
-
-
-
-
-
 @import '../../../style/mixin';
 .bookingSection {
   width: 100%;
@@ -292,19 +89,6 @@
       }
     }
 
-
-      // .bookingTicket:hover{
-      //   transform: scale(1.2);
-      
-      // }
-      // .bookingTicketText:hover{
-      //   .ticket1{
-      //     transform: scale(1.2);
-      //   }
-      // }
-      // .ticket1:hover{
-      //   transform: scale(1.2);
-      // }
       .bookingTicketText:hover + .ticket {
         transform: scale(1.2);
         transition: transform .7s ease; /* Optional: Add transition effect */
@@ -318,7 +102,7 @@
 
       .ticket1 {
         width:100%; height:100%;
-        background: url(../../../asset/img/img/예약안내/1920_4_byeol.png) center;
+        background: url(../../../asset/img/img/예약안내/1920_4_byeol.png) center no-repeat;
         background-size: cover;
         overflow: hidden;
       }
@@ -330,8 +114,7 @@
       }
       .ticket3 {
         width:100%; height:100%;
-        background: url(../../../asset/img/img/예약안내/1920_4_seokjojeon.png)
-          center;
+        background: url(../../../asset/img/img/예약안내/1920_4_seokjojeon.png) center;
         background-size: cover;
         overflow: hidden;
       }
@@ -345,20 +128,26 @@
   
         .bookingWrap {
           flex-direction: column;
-          .bookingTicket {
+          .hiddenCenter{
+            margin:20px 0;
+          }
+          .hidden{
             width: 100%;
             height: 432px;
-            padding: 70px 50px 0 50px;
+          .bookingTicket {
+            // width: 100%;
+            // height: 432px;
+            // padding: 70px 50px 0 50px;
             .bookingTicketLink { 
               margin-top: -150px;
             }
           }
+        }
           .ticket1 {
             background: url(../../../asset/img/img/예약안내/1024_4_byeol.png);
           }
           .ticket2 {
             background: url(../../../asset/img/img/예약안내/1024_4_dal.png);
-            margin: 20px 0;
           }
           .ticket3 {
             background: url(../../../asset/img/img/예약안내/1024_4_seojojeon.png);
@@ -377,7 +166,7 @@
           flex-direction: column;
           .bookingTicket {
             height: 368px;
-            padding:80px 30px 0 30px;
+            // padding:80px 30px 0 30px;
             h1{
               @include w24r;
               span{

@@ -80,15 +80,15 @@ const menuItems = [
     category: '알림마당',
     items: [
       {
-        name: '별빛야행',
+        name: '공지사항',
         link: '/notice/inform',
       },
       {
-        name: '달빛기행',
+        name: '문의하기',
         link: '/notice/inquiry',
       },
       {
-        name: '밤의석조전',
+        name: 'FAQ',
         link: '/notice/faq',
       },
     ],

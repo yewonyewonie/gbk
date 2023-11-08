@@ -1,8 +1,23 @@
   import React, { useState, useRef , useEffect } from 'react';
   import './NoticePage.scss';
 import FooterSecond from '../components/layouts/FooterSecond';
+import { useParams } from 'react-router-dom';
 
   const NoticePage = () => {
+    const { tab } = useParams();
+      useEffect(() => {
+        console.log('Tab from URL:', tab);
+        if (!tab) {
+          setActiveTab('notice');
+        } else if (tab === 'inform') {
+          setActiveTab('notice');
+        } else if (tab === 'inquiry') {
+          setActiveTab('inquiry');
+        } else if (tab === 'faq') {
+          setActiveTab('faq');
+        }
+      }, [tab]);
+
     const [activeTab, setActiveTab] = useState('notice');
 
     const tabRefs = useRef([]);
@@ -21,6 +36,8 @@ import FooterSecond from '../components/layouts/FooterSecond';
     };
 
     const renderTabContent = () => {
+      
+      
       switch (activeTab) {
         case 'notice':
           return (
@@ -195,6 +212,7 @@ import FooterSecond from '../components/layouts/FooterSecond';
           return null;
       }
     };
+   
 
     return (
       <main className="NoticePage">

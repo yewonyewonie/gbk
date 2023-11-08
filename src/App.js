@@ -25,6 +25,7 @@ function App() {
 		<Route path='/gallery' element={<GalleryPage></GalleryPage>}></Route>
 		<Route path='/gallery/:tab' element={<GalleryPage></GalleryPage>}></Route>
 		<Route path='/notice' element={<NoticePage></NoticePage>}></Route>
+		<Route path='/notice/:tab' element={<NoticePage></NoticePage>}></Route>
 		<Route path='/users' element={<UsersPage/>}></Route>
 		<Route path='/signup' element={<SignUpPage/>}></Route>	
 		<Route path='/member' element={<MembersPage/>}></Route>	
