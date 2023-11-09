@@ -12,6 +12,8 @@ header {
   transition: 1s;
   overflow: hidden;
   background-color: black;
+  transition: height 0.5s ease;
+  
 
   .headerScreen {
     @include screenType1;
