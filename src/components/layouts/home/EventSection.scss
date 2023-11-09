@@ -41,7 +41,7 @@
         .onlineImgWrap {
           overflow: hidden;
           .onlinePic1 {
-            background: url(../../../asset/img/img/온라인이벤트/online-event02.jpg)
+            background: url(../../../asset/img/event/online-event02.jpg)
               center;
             background-size: cover;
             &:hover {
@@ -51,7 +51,7 @@
             }
           }
           .onlinePic2 {
-            background: url(../../../asset/img/img/온라인이벤트/online-event05.png)
+            background: url(../../../asset/img/event/online-event05.png)
               center;
             background-size: cover;
             &:hover {
@@ -61,7 +61,7 @@
             }
           }
           .onlinePic3 {
-            background: url(../../../asset/img/img/온라인이벤트/online-event07.png)
+            background: url(../../../asset/img/event/online-event07.png)
               center;
             background-size: cover;
             &:hover {
@@ -159,8 +159,6 @@
           }
           .onlineBoxTxt {
             height: 154px;
-            div {
-            }
           }
         }
       }

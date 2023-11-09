@@ -1,6 +1,5 @@
 import BasicButton from '../../btn/BasicButton';
 import './EventSection.scss';
-// import FooterImg from '../../../asset/img/footerWeb.png';
 
 const EventSection = () => {
 
