@@ -8,12 +8,10 @@ header {
   left: 0;
   height: 90px;
   text-align: center;
-  z-index: 100;
+  z-index: 1000000;
   transition: 1s;
   overflow: hidden;
   background-color: black;
-  transition: height 0.5s ease;
-  
 
   .headerScreen {
     @include screenType1;
@@ -21,6 +19,8 @@ header {
     height: 90px;
 
     h1 {
+      display: flex;
+      justify-content: center;
       i {
         display: block;
         width: 132px;
