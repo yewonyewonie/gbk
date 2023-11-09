@@ -3,14 +3,12 @@
 .onlineEvent {
   width: 100%;
   height: 100vh;
-  background: url(../../../asset/img/all_bg.png), linear-gradient(to bottom, #1a124a 50%, #433577);
-  
+  background: url(../../../asset/img/all_bg.png),
+    linear-gradient(to bottom, #1a124a 50%, #433577);
   .onlineEventMain {
-
     max-width: 1440px;
     height: 100%;
     margin: 0 auto;
-    // padding-top: 195px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,42 +35,45 @@
           width: 100%;
           height: 360px;
           transform: scale(1);
-          transition: transform 0.7s ease; /* Optional: Add transition effect */
+          transition: transform 0.7s ease;
         }
-        
-        .onlineImgWrap{
+
+        .onlineImgWrap {
           overflow: hidden;
           .onlinePic1 {
-            background: url(../../../asset/img/img/온라인이벤트/online-event02.jpg) center;
+            background: url(../../../asset/img/img/온라인이벤트/online-event02.jpg)
+              center;
             background-size: cover;
             &:hover {
               transform: scale(1.2);
               background-position: center;
               transition: 2s;
-          }
+            }
           }
           .onlinePic2 {
-            background: url(../../../asset/img/img/온라인이벤트/online-event05.png) center;
+            background: url(../../../asset/img/img/온라인이벤트/online-event05.png)
+              center;
             background-size: cover;
             &:hover {
               transform: scale(1.2);
               background-position: center;
               transition: 2s;
-          }
+            }
           }
           .onlinePic3 {
-            background: url(../../../asset/img/img/온라인이벤트/online-event07.png) center;
+            background: url(../../../asset/img/img/온라인이벤트/online-event07.png)
+              center;
             background-size: cover;
             &:hover {
               transform: scale(1.2);
               background-position: center;
               transition: 2s;
+            }
           }
-          }
-      }
+        }
 
         .onlineBoxTxt {
-          height:180px;
+          height: 180px;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -83,91 +84,86 @@
             @include b18r;
             padding: 5px 0 20px 0;
           }
-          .BasicButton{
-            padding:0;
+          .BasicButton {
+            padding: 0;
           }
         }
       }
     }
   }
-  .eventSectionFooter{
-    width:100%;
-    height:665px;
+  .eventSectionFooter {
+    width: 100%;
+    height: 665px;
     background: url(../../../asset/img/footerWeb.png) no-repeat;
     background-size: contain;
     background-position: center bottom;
     position: relative;
-    bottom:663px;
+    bottom: 663px;
   }
   @include tablet {
+    .onlineEventMain {
+      padding: 0 50px;
 
-      .onlineEventMain {
-        padding: 0 50px;
-  
-        .onlineWrap {
-          .onlineBox {
-            .onlineBoxPic {
-              height: 242px;
-            }
-  
-            .onlineBoxTxt {
-              height: 150px;
-  
-              h1 {
-                @include b18r;
-                font-weight: bold;
-              }
-  
-              div {
-                padding: 10px 0;
-              }
-            }
+      .onlineWrap {
+        .onlineBox {
+          .onlineBoxPic {
+            height: 242px;
           }
-        }
-      }
-    }
-    @include mobileF{
-      height:2552px;
-      .onlineEventMain{
-        padding:0 30px;
-        .onlineWrap{
-          flex-direction: column;
-          .onlineBox{
-            width:100%;
-            margin-bottom: 20px;
-            .onlineBoxPic{
-              height:540px;
-            }
-            .onlineBoxTxt{
-              height:184px;
-              div{
-                font-size: 16px;
-              }
-            }
-          }
-        }
-      }
-    }
-    @include mobileS{
-      height:2032px;
-      .onlineEventMain{
-            padding:0 20px;
-        .onlineWrap{
 
-          .onlineBox{
+          .onlineBoxTxt {
+            height: 150px;
 
-            .onlineBoxPic{
-               height:361px;
+            h1 {
+              @include b18r;
+              font-weight: bold;
             }
-            .onlineBoxTxt{
-              height:154px;
-              div{
 
-              }
+            div {
+              padding: 10px 0;
             }
           }
         }
       }
     }
   }
-
+  @include mobileF {
+    height: 2552px;
+    .onlineEventMain {
+      padding: 0 30px;
+      .onlineWrap {
+        flex-direction: column;
+        .onlineBox {
+          width: 100%;
+          margin-bottom: 20px;
+          .onlineBoxPic {
+            height: 540px;
+          }
+          .onlineBoxTxt {
+            height: 184px;
+            div {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include mobileS {
+    height: 2032px;
+    .onlineEventMain {
+      padding: 0 20px;
+      .onlineWrap {
+        .onlineBox {
+          .onlineBoxPic {
+            height: 361px;
+          }
+          .onlineBoxTxt {
+            height: 154px;
+            div {
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,258 +1,239 @@
 @import '../../../style/mixin';
 
 .subProgram {
+  width: 100%;
+  background: linear-gradient(to bottom, #1a124a 50%, #433577);
+  .subProgramHeader {
     width: 100%;
-    background: linear-gradient(to bottom, #1a124a 50%, #433577);
-    .subProgramHeader{
-        width:100%;
-        height:400px;
-        background-color: #000000;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        padding-bottom: 100px;
-        background: url(../../../asset/img/subtop2.png) center;
-        background-size: cover;
-        h1{
-            @include w48b;
-            padding-bottom: 20px;
-        }
-        p{
-            @include w18b;
-        }
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 100px;
+    background: url(../../../asset/img/subtop2.png) center;
+    background-size: cover;
+    h1 {
+      @include w48b;
+      padding-bottom: 20px;
     }
-
-
-    .subProgramScreen {
-        padding-top: 100px;
-        max-width: 1440px;
-        height: 100%;
-        margin: 0 auto;
-
-        .programContent {
-            padding-top: 100px;
-            text-align: center;
-            .programContentTitle{
-                @include w48b;
-            }
-            .programContentText{
-                @include w18r;
-                padding-bottom: 100px;
-            }
-            .subProgramWrap{
-                display: flex;
-                justify-content: space-between;
-   
-                .subProgramBox{
-                    width:calc((100% - 20px) / 2);
-                    height:777px;
-                    background-color: #ffffff;
-                    // position:relative;
-                    // z-index: 10;
-                    .subProgramBoxPic{
-                        width:100%;
-                        height:464px;
-                    }
-                    .subProgramStarPic1{
-                        background: url(../../../asset/img/img/별빛야행/byeol-26.png) center;
-                        background-size: cover;
-                    }
-                    .subProgramStarPic2{
-                        background: url(../../../asset/img/img/별빛야행/byeol-27.png) center;
-                        background-size: cover;
-                    }
-                    .subProgramMoonPic1{
-                        background: url(../../../asset/img/img/달빛기행/dal-12.png) center;
-                        background-size: cover;
-                    }
-                    .subProgramMoonPic2{
-                        background: url(../../../asset/img/img/달빛기행/dal-21.png) left;
-                        background-size: cover;
-                    }
-                    .subProgramNightPic1{
-                        background: url(../../../asset/img/img/밤의석조전/seokjojeon-41.png) ;
-                        background-size: cover;
-                    }
-                    .subProgramNightPic2{
-                        background: url(../../../asset/img/img/밤의석조전/seokjojeon-37.png) center;
-                        background-size: cover;
-                    }
-                    .subProgramBoxText{
-                        height:300px;
-                        text-align: start;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        padding:50px 0 30px 30px;
-                        h2{
-                            @include b24b;
-                        }
-                        p{
-                            @include b18r;
-                        }
-                        button{
-                            width:111px;
-                            height:26px;
-                            font-size: 14px;
-                        }
-                    }
-                }
-            }
-        }
-
-        .tabWrap {
-            display: flex;
-            justify-content: center;
-            margin: 0 auto;
-
-            .tabDivide {
-                padding: 0 20px;
-                @include w24r;
-            }
-
-            .tabMenu {
-                @include w24l;
-                font-weight: 300;
-                cursor: pointer;
-            }
-            .tabMenu.tabAcitve{
-                @include w24eb;
-                padding-bottom: 5px;
-                border-bottom: 2px solid #ffffff;
-            }
-        }
+    p {
+      @include w18b;
     }
-    .subProgramFooter{
-        width:100%;
-        height:118px;
-        background: url(../../../asset/img/footerWeb.png) no-repeat;
-        background-size: contain;
-        background-position: center bottom;
-        position: relative;
-        bottom:-2px;
-        margin-top: 105px;
+  }
+  .subProgramScreen {
+    padding-top: 100px;
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    .programContent {
+      padding-top: 100px;
+      .programContentTitle {
+        @include w48b;
       }
-    @include tablet{
-      
-
-        .subProgramScreen{
-            width:100%;
-            height:100%;
-
-            padding:0 50px;
-
-            .tabWrap{
-                margin-top: 60px;
+      .programContentText {
+        @include w18r;
+        padding-bottom: 100px;
+      }
+      .subProgramWrap {
+        display: flex;
+        justify-content: space-between;
+        .subProgramBox {
+          width: calc((100% - 20px) / 2);
+          height: 777px;
+          background-color: #ffffff;
+          .subProgramBoxPic {
+            width: 100%;
+            height: 464px;
+          }
+          .subProgramStarPic1 {
+            background: url(../../../asset/img/img/별빛야행/byeol-26.png) center;
+            background-size: cover;
+          }
+          .subProgramStarPic2 {
+            background: url(../../../asset/img/img/별빛야행/byeol-27.png) center;
+            background-size: cover;
+          }
+          .subProgramMoonPic1 {
+            background: url(../../../asset/img/img/달빛기행/dal-12.png) center;
+            background-size: cover;
+          }
+          .subProgramMoonPic2 {
+            background: url(../../../asset/img/img/달빛기행/dal-21.png) left;
+            background-size: cover;
+          }
+          .subProgramNightPic1 {
+            background: url(../../../asset/img/img/밤의석조전/seokjojeon-41.png);
+            background-size: cover;
+          }
+          .subProgramNightPic2 {
+            background: url(../../../asset/img/img/밤의석조전/seokjojeon-37.png)
+              center;
+            background-size: cover;
+          }
+          .subProgramBoxText {
+            height: 300px;
+            text-align: start;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 50px 0 30px 30px;
+            h2 {
+              @include b24b;
             }
-            .programContent{
-                padding-top: 80px;
-                .subProgramWrap{
-                    width: 100%;
-                    .subProgramBox{
-                        height:100%;
-                        .subProgramBoxPic{
-                            width: 100%;
-                            height:290px;
-                        }
-                        .subProgramBoxText{
-                            padding:30px;
-                            br{
-                                display: none;
-                            }
-                            p{
-                                @include b16r;
-                            }
-                        }
-                    }
-                }
-            } 
-        }
-        .subProgramFooter{
-            bottom:0px;
-        }
-}
-    @include mobileF{
-        .subProgramScreen{
-            width:100%;
-            height:100%;
-            padding:0 30px;
-
-            // background-color: blue;
-            .tabWrap{
-                margin-top: 60px;
+            p {
+              @include b18r;
             }
-            .programContent{
-                .programContentTitle{
-                    @include w40b;
-                }
-
-                padding-top: 60px;
-                .subProgramWrap{
-                    flex-direction: column;
-                    .subProgramBox{
-                        width:100%;
-                        margin-bottom: 20px;
-                        .subProgramBoxPic{
-                            max-width:708px;
-                            height:461px;
-                        }
-                        .subProgramBoxText{
-                            height:244px;
-                        }
-                    }
-                }
+            button {
+              width: 111px;
+              height: 26px;
+              font-size: 14px;
             }
+          }
         }
-        .subProgramFooter{
-            margin-top: 55px;
-        }
+      }
     }
-      @include mobileS{
-        .subProgramScreen{
-            padding:0 20px;
-            width:100%;
-            // background-color: blue;
-            .tabWrap{
-                .tabMenu{
-                    @include w18l
-                }
-                .tabMenu.tabAcitve{
-                    @include w18b
-                }
+    .tabWrap {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      .tabDivide {
+        padding: 0 20px;
+        @include w24r;
+      }
+      .tabMenu {
+        @include w24l;
+        font-weight: 300;
+        cursor: pointer;
+      }
+      .tabMenu.tabAcitve {
+        @include w24eb;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #ffffff;
+      }
+    }
+  }
+  .subProgramFooter {
+    width: 100%;
+    height: 118px;
+    background: url(../../../asset/img/footerWeb.png) no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    position: relative;
+    bottom: -2px;
+  }
+  @include tablet {
+    .subProgramScreen {
+      width: 100%;
+      height: 100%;
+      padding: 0 50px;
+      .tabWrap {
+        margin-top: 60px;
+      }
+      .programContent {
+        padding-top: 80px;
+        .subProgramWrap {
+          width: 100%;
+          .subProgramBox {
+            height: 100%;
+            .subProgramBoxPic {
+              width: 100%;
+              height: 290px;
             }
-            .programContent{
-                .programContentTitle{
-                    @include font32b;
-                }
-                .programContentText{
-                    @include w14r
-                }
-                padding-top: 50px;
-                .subProgramWrap{
-                    flex-direction: column;
-                    .subProgramBox{
-                        width:100%;
-                        height:100%;
-                        margin-bottom: 20px;
-                        .subProgramBoxPic{
-                            max-width:708px;
-                            height:275px;
-                        }
-                        .subProgramBoxText{
-                            h2{
-                                @include b18b;
-                            }
-                            p{
-                                @include b14r;
-                            }
-                        }
-                    }
-                }
+            .subProgramBoxText {
+              padding: 30px;
+              br {
+                display: none;
+              }
+              p {
+                @include b16r;
+              }
             }
+          }
         }
+      }
     }
-    .subProgramFooter{
-        margin-top: 105px;
+    .subProgramFooter {
+      bottom: 0px;
     }
+  }
+  @include mobileF {
+    .subProgramScreen {
+      width: 100%;
+      height: 100%;
+      padding: 0 30px;
+      .tabWrap {
+        margin-top: 60px;
+      }
+      .programContent {
+        .programContentTitle {
+          @include w40b;
+        }
+        padding-top: 60px;
+        .subProgramWrap {
+          flex-direction: column;
+          .subProgramBox {
+            width: 100%;
+            margin-bottom: 20px;
+            .subProgramBoxPic {
+              max-width: 708px;
+              height: 461px;
+            }
+            .subProgramBoxText {
+              height: 244px;
+            }
+          }
+        }
+      }
+    }
+    .subProgramFooter {
+      margin-top: 55px;
+    }
+  }
+  @include mobileS {
+    .subProgramScreen {
+      padding: 0 20px;
+      width: 100%;
+      .tabWrap {
+        .tabMenu {
+          @include w18l;
+        }
+        .tabMenu.tabAcitve {
+          @include w18b;
+        }
+      }
+      .programContent {
+        .programContentTitle {
+          @include font32b;
+        }
+        .programContentText {
+          @include w14r;
+        }
+        padding-top: 50px;
+        .subProgramWrap {
+          flex-direction: column;
+          .subProgramBox {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 20px;
+            .subProgramBoxPic {
+              max-width: 708px;
+              height: 275px;
+            }
+            .subProgramBoxText {
+              h2 {
+                @include b18b;
+              }
+              p {
+                @include b14r;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .subProgramFooter {
+    margin-top: 105px;
+  }
 }

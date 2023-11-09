@@ -4,8 +4,6 @@ import './EventSection.scss';
 
 const EventSection = () => {
 
-
-  
   return (
     <section className="onlineEvent">
       <div className="onlineEventMain">

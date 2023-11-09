@@ -179,7 +179,7 @@ const Header = () => {
 
       timeoutId = setTimeout(() => {
         setNavVisibility(true);
-      }, 2000); 
+      }, 1000); 
     };
 
     const handleMouseEnter = () => {
@@ -235,7 +235,7 @@ const Header = () => {
     >
       <div className="headerScreen">
         <h1 className="logoWrap">
-          <Link to="/"><i></i></Link>``
+          <Link to="/"><i></i></Link>
         </h1>
         <nav className={isNavToggle ? 'gnb' : 'gnb Off'}>
           <ul>
