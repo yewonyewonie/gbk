@@ -47,7 +47,6 @@ const EventSection = () => {
         </div>
       </div>
       <div className="eventSectionFooter"></div>
-      {/* <img className="eventSectionFooter" src={FooterImg}></img> */}
     </section>
   );
 };

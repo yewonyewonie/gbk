@@ -23,6 +23,8 @@
     .onlineWrap {
       display: flex;
       justify-content: space-between;
+      position: relative;
+      z-index: 100;
 
       .onlineBox {
         width: calc((100% - 60px) / 3);

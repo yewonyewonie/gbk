@@ -90,15 +90,12 @@ const Header = () => {
         </nav>
         <nav className={isNavToggle ? 'unb' : 'unb Off'}>
           <ul>
-            {isSignIn ? (
-              <li onClick={SignInHandler}>
-                <Link>로그아웃</Link>
-              </li>
-            ) : (
+    
+
               <li onClick={SignInHandler}>
                 <Link to='/users'>로그인</Link>
               </li>
-            )}
+
             <li>
               <Link to='/signUp'>회원가입</Link>
             </li>
