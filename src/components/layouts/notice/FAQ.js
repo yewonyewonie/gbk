@@ -17,41 +17,38 @@ const initialInformState = {
   informIndex: [
     {
       id: 1,
-      title: '달빛기행 외국인 행사 예매안내',
-      content:
-        '10.27(금)~10.31(화) 영·중·일 3개 국어로 운영되며 예매 시작은 10.14(토) 오후 2시부터 입니다.이용에 불편함 없으시길 바랍니다.',
-      writer: '문화재청',
+      title: '신청한 참여시간을 다른시간으로 옮겨도 될까요?',
+      content: '안됩니다.',
+      writer: '박*수',
       date: new Date(2023, 0, 1).toLocaleDateString(),
     },
     {
       id: 2,
-      title: '별빛야행 도슭수라상 메뉴변경',
-      content:
-        '10.20(금)부터 도슭수라상의 기존메뉴인 완자전이 생선에서 돼지고기로 변경됩니다. 이용에 불편함 없으시길 바랍니다.',
-      writer: '문화재청',
+      title:
+        '서류가 준비안되어서 할인을 못받았는데 현장에서 서류를 제출하고 할인을 받을 수 있나요?',
+      content: '안됩니다.',
+      writer: '전*태',
       date: new Date(2023, 0, 1).toLocaleDateString(),
     },
     {
       id: 3,
-      title: '밤의 석조전 테라스 카페 체험 장소변경 안내',
-      content:
-        '금일 진행 예정이던 테라스 카페 체험 행사가 우천으로 인하여 테라스가 아닌 석조전 내부에서 진행될 예정입니다.',
-      writer: '문화재청',
+      title: '공연시간이 어떻게 되나요?',
+      content: '알아서 찾으세요.',
+      writer: '강*구',
       date: new Date(2023, 0, 1).toLocaleDateString(),
     },
     {
       id: 4,
-      title: '사회적 배려 대상자 궁궐 초청 행사 접수 시작!',
-      content:
-        '10.20(금) 오후 2시부터 접수시작입니다. 경복궁 별빛야행 - 11.01.(수) ~ 11.14.(화) 창덕궁 달빛기행 - 11.01.(수) ~ 11.14.(화)',
-      writer: '문화재청',
+      title: '미취학 아동과 동반하여 출입이 가능한가요?',
+      content: '티켓이 없으면 불가능합니다.',
+      writer: '정*원',
       date: new Date(2023, 0, 1).toLocaleDateString(),
     },
     {
       id: 5,
-      title: '다섯번째 공지사항입니다.',
-      content: '다섯번째 공지사항 내용입니다.',
-      writer: '문화재청',
+      title: '우천 시 일정이 어떻게 되나요?',
+      content: '정상영업합니다. 단, 우산은 가지고 들어가실 수 없습니다.',
+      writer: '조*민',
       date: new Date(2023, 0, 1).toLocaleDateString(),
     },
   ],
@@ -81,7 +78,7 @@ const reducer = (state, action) => {
   }
 };
 
-const List = () => {
+const FAQ = () => {
   const [data, dispatch] = useReducer(reducer, initialInformState);
   const [onModal, setOnModal] = useState(false);
   const [delayModal, setDelayModal] = useState(false);
@@ -113,7 +110,7 @@ const List = () => {
   }, []);
 
   const handleModal = (id) => {
-    navigate(`/notice/inform/modal/${id}`);
+    navigate(`/notice/faq/modal/${id}`);
     setOnModal(true);
     if (handleDelayModal) {
       clearTimeout(handleDelayModal);
@@ -180,4 +177,4 @@ const List = () => {
   );
 };
 
-export default List;
+export default FAQ;

@@ -11,7 +11,6 @@ const IntroSection = () => {
   const modelRef = useRef();
   const model2Ref = useRef();
   const [targetPosition, setTargetPosition] = useState(0.5);
-  // const [onContents, setOnContents] = useState(false);
   const [wheelCount, setWheelCount] = useState(0);
 
   // 마우스 휠 핸들러
@@ -33,14 +32,6 @@ const IntroSection = () => {
       }
     }
   };
-  // useEffect(() => {
-  //   if (wheelCount === 1) {
-  //     setOnContents(true);
-  //   }
-  //   if (wheelCount === 5) {
-  //     setOnContents(true);
-  //   }
-  // }, [wheelCount]);
 
   return (
     <div className="backGround">
@@ -56,7 +47,9 @@ const IntroSection = () => {
       </div>
       <div className={wheelCount >= 15 ? 'space O' : 'space'}></div>
       <div className={wheelCount >= 20 ? 'filter O' : 'filter'}></div>
-      <div className={wheelCount >= 20 ? 'scrollGuideWrap' : 'scrollGuideWrap O'}>
+      <div
+        className={wheelCount >= 20 ? 'scrollGuideWrap' : 'scrollGuideWrap O'}
+      >
         <div className="scrollGuide1">
           <div></div>
         </div>
