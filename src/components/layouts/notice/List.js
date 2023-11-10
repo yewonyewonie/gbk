@@ -19,17 +19,18 @@ const initialInformState = {
       id: 1,
       title: '달빛기행 외국인 행사 예매안내',
       content:
-        '10.27(금)~10.31(화) 영·중·일 3개 국어로 운영되며 예매 시작은 10.14(토) 오후 2시부터 입니다.이용에 불편함 없으시길 바랍니다.',
+        `10.27(금)~10.31(화) 영·중·일 3개 국어로 운영되며 예매 시작은 10.14(토) 오후 2시부터 입니다.
+        이용에 불편함 없으시길 바랍니다.`,
       writer: '문화재청',
-      date: new Date(2023, 0, 1).toLocaleDateString(),
+      date: new Date(2023, 9, 1).toLocaleDateString(),
     },
     {
       id: 2,
       title: '별빛야행 도슭수라상 메뉴변경',
       content:
-        '10.20(금)부터 도슭수라상의 기존메뉴인 완자전이 생선에서 돼지고기로 변경됩니다. 이용에 불편함 없으시길 바랍니다.',
+        '10.20(금)부터 도슭수라상의 기존메뉴인 완자전이 생선에서 돼지고기로 변경됩니다. <br />이용에 불편함 없으시길 바랍니다.',
       writer: '문화재청',
-      date: new Date(2023, 0, 1).toLocaleDateString(),
+      date: new Date(2023, 9, 14).toLocaleDateString(),
     },
     {
       id: 3,
@@ -37,7 +38,7 @@ const initialInformState = {
       content:
         '금일 진행 예정이던 테라스 카페 체험 행사가 우천으로 인하여 테라스가 아닌 석조전 내부에서 진행될 예정입니다.',
       writer: '문화재청',
-      date: new Date(2023, 0, 1).toLocaleDateString(),
+      date: new Date(2023, 9, 20).toLocaleDateString(),
     },
     {
       id: 4,
@@ -45,14 +46,14 @@ const initialInformState = {
       content:
         '10.20(금) 오후 2시부터 접수시작입니다. 경복궁 별빛야행 - 11.01.(수) ~ 11.14.(화) 창덕궁 달빛기행 - 11.01.(수) ~ 11.14.(화)',
       writer: '문화재청',
-      date: new Date(2023, 0, 1).toLocaleDateString(),
+      date: new Date(2023, 10, 3).toLocaleDateString(),
     },
     {
       id: 5,
-      title: '다섯번째 공지사항입니다.',
-      content: '다섯번째 공지사항 내용입니다.',
+      title: '참여대상 현장 추첨 이벤트.',
+      content: '행사에 참여하는 분들을 대상으로 이벤트를 진행중이니 많은 참여 부탁드립니다',
       writer: '문화재청',
-      date: new Date(2023, 0, 1).toLocaleDateString(),
+      date: new Date(2023, 10, 5).toLocaleDateString(),
     },
   ],
 };
