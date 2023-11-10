@@ -8,7 +8,7 @@ const DetailPage = () => {
   const detail = informIndex.find((info) => info.id === parseInt(id));
 
   return detail ? (
-    <div>
+    <div className="modal">
       <h1>{detail.title}</h1>
       <p>{detail.content}</p>
       <p>작성자: {detail.writer}</p>
