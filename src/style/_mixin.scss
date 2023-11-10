@@ -221,13 +221,6 @@ $colors: (
   font-weight: 400;
 }
 
-// @mixin b10r {
-//   font-size: 10px;
-//   color: map-get($map: $colors, $key: bFont01);
-//   font-weight: 400;
-// }
-
-//ST : ScreenType;
 @mixin screenProtector {
   width: 100%;
   height: 100%;

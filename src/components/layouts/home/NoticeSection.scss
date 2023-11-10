@@ -21,8 +21,6 @@
         @include b24l;
         margin: 20px 0 100px 0;
       }
-      button {
-      }
     }
     .noticeRight {
       display: flex;
@@ -119,8 +117,6 @@
             p {
               @include b16l;
             }
-            .noticeBoxLogo {
-            }
           }
         }
       }
@@ -132,8 +128,6 @@
     .noticeSectionMain {
       margin-top: 100px;
       .noticeLeft {
-        h1 {
-        }
         p {
           margin: 15px 0 50px 0;
         }
@@ -145,14 +139,6 @@
             width: 100%;
             height: 300px;
             margin-bottom: 10px;
-            .noticeBoxDate {
-            }
-            h1 {
-            }
-            p {
-            }
-            .noticeBoxLogo {
-            }
           }
         }
       }

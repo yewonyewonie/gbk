@@ -1,17 +1,18 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import Model from './intro/Model';
 import './IntroSection.scss';
 import Lights from './intro/Lights';
 import Floor from './intro/Floor';
 
-const IntroSection = ({ wheelCount, setWheelCount }) => {
+const IntroSection = () => {
   const modelRef = useRef();
   const model2Ref = useRef();
   const [targetPosition, setTargetPosition] = useState(0.5);
-  const [onContents, setOnContents] = useState(false);
+  // const [onContents, setOnContents] = useState(false);
+  const [wheelCount, setWheelCount] = useState(0);
 
   // 마우스 휠 핸들러
   const handleWheel = (e) => {
@@ -32,19 +33,30 @@ const IntroSection = ({ wheelCount, setWheelCount }) => {
       }
     }
   };
-  useEffect(() => {
-    if (wheelCount === 1) {
-      setOnContents(true);
-    }
-    if (wheelCount === 5) {
-      setOnContents(true);
-    }
-  }, [wheelCount]);
+  // useEffect(() => {
+  //   if (wheelCount === 1) {
+  //     setOnContents(true);
+  //   }
+  //   if (wheelCount === 5) {
+  //     setOnContents(true);
+  //   }
+  // }, [wheelCount]);
 
   return (
     <div className="backGround">
-      <div className={onContents ? 'title O' : 'title'}>밤을 걷다.</div>
-      <div className="scrollGuideWrap">
+      <div
+        className={wheelCount >= 1 && wheelCount <= 20 ? 'title O' : 'title'}
+      >
+        밤을 걷다.
+      </div>
+      <div
+        className={wheelCount >= 10 && wheelCount <= 20 ? 'title2 O' : 'title2'}
+      >
+        조선을 걷다.
+      </div>
+      <div className={wheelCount >= 15 ? 'space O' : 'space'}></div>
+      <div className={wheelCount >= 20 ? 'filter O' : 'filter'}></div>
+      <div className={wheelCount >= 20 ? 'scrollGuideWrap' : 'scrollGuideWrap O'}>
         <div className="scrollGuide1">
           <div></div>
         </div>
@@ -73,7 +85,6 @@ const IntroSection = ({ wheelCount, setWheelCount }) => {
         <spotLight position={[10, 15, 10]} angle={0.3} />
         <Floor />
         <Model
-          url="./lantern.gltf"
           targetPosition={targetPosition}
           modelRef={modelRef}
           model2Ref={model2Ref}

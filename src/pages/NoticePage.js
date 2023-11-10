@@ -6,7 +6,6 @@ import { useParams } from 'react-router-dom';
   const NoticePage = () => {
     const { tab } = useParams();
       useEffect(() => {
-        console.log('Tab from URL:', tab);
         if (!tab) {
           setActiveTab('notice');
         } else if (tab === 'inform') {

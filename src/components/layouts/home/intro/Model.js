@@ -3,9 +3,11 @@
 import { useFrame, useLoader } from '@react-three/fiber';
 import { Vector3 } from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import url from '../../../../asset/3d/lantern.gltf';
+
 import * as THREE from 'three';
 
-function Model({ url, targetPosition, modelRef }) {
+function Model({ targetPosition, modelRef }) {
   const gltf = useLoader(GLTFLoader, url);
 
   useFrame(({ camera }) => {

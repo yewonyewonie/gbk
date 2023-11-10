@@ -2,22 +2,19 @@
 import { useLoader } from '@react-three/fiber';
 import React, { useRef } from 'react';
 import * as THREE from 'three';
+import ao from '../../../../asset/3d/floor/rock_tile_floor_ao_1k.png';
+import disp from '../../../../asset/3d/floor/rock_tile_floor_disp_1k.png';
+import rough from '../../../../asset/3d/floor/rock_tile_floor_rough_1k.png';
+import nor from '../../../../asset/3d/floor/rock_tile_floor_nor_gl_1k.png';
+import diff from '../../../../asset/3d/floor/rock_tile_floor_diff_1k.png';
 
 const Floor = () => {
   const [aoMap, displacementMap, roughnessMap, normalMap] = useLoader(
     THREE.TextureLoader,
-    [
-      '/floor/rock_tile_floor_ao_1k.png',
-      '/floor/rock_tile_floor_disp_1k.png',
-      '/floor/rock_tile_floor_rough_1k.png',
-      '/floor/rock_tile_floor_nor_gl_1k.png',
-    ],
+    [ao, disp, rough, nor],
   );
 
-  const albedoMap = useLoader(
-    THREE.TextureLoader,
-    '/floor/rock_tile_floor_diff_1k.png',
-  );
+  const albedoMap = useLoader(THREE.TextureLoader, diff);
 
   const textures = [aoMap, displacementMap, roughnessMap, normalMap, albedoMap];
   textures.forEach((texture) => {
