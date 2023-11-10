@@ -135,10 +135,11 @@
 
 // export default Header;
 
+// Header.jsx
 import React, { useEffect, useState } from 'react';
-import './Header.scss';
+import './Header.scss';  // 이 부분은 실제 스타일 파일의 경로로 수정 필요
 import { Link } from 'react-router-dom';
-import { menuItems } from '../datas/LocalList';
+import { menuItems } from '../datas/LocalList';  // 이 부분은 실제 데이터 파일의 경로로 수정 필요
 
 const Header = () => {
   const [isSignIn, setIsSignIn] = useState(false);
@@ -179,19 +180,7 @@ const Header = () => {
 
       timeoutId = setTimeout(() => {
         setNavVisibility(true);
-      }, 1000); 
-    };
-
-    const handleMouseEnter = () => {
-      setNavVisibility(true);
-    };
-
-    const handleMouseLeave = () => {
-      if (!window.scrollY && window.innerWidth <= 1024) {
-        timeoutId = setTimeout(() => {
-          setNavVisibility(false);
-        }, 1000);
-      }
+      }, 1000);
     };
 
     const resetTimeout = () => {
@@ -200,19 +189,15 @@ const Header = () => {
       if (!window.scrollY && window.innerWidth <= 1024) {
         timeoutId = setTimeout(() => {
           setNavVisibility(false);
-        }, 1000); 
+        }, 1000);
       }
     };
 
     window.addEventListener('scroll', handleScroll);
-    window.addEventListener('mouseenter', handleMouseEnter);
-    window.addEventListener('mouseleave', handleMouseLeave);
     window.addEventListener('mousemove', resetTimeout);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('mouseenter', handleMouseEnter);
-      window.removeEventListener('mouseleave', handleMouseLeave);
       window.removeEventListener('mousemove', resetTimeout);
       clearTimeout(timeoutId);
     };
@@ -285,4 +270,3 @@ const Header = () => {
 };
 
 export default Header;
-

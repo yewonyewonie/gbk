@@ -28,6 +28,7 @@
     margin: 0 auto;
     .programContent {
       padding-top: 100px;
+      text-align: center;
       .programContentTitle {
         @include w48b;
       }
